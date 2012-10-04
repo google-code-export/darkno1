@@ -1,0 +1,20 @@
+
+    Bước 1: Tạo bbcode với HTML sau rồi chèn bbcode vào diễn đàn (yêu cầu jquery nhé)
+
+<code>
+        <script type="text/javascript">
+        $(function(){$(".postbody .content img").click(function(){$(this).toggleClass("c3resize")})});</script>
+</code>
+
+    Bước 2: Vào Giao diện => Kiểu dáng => Sửa style, thêm vào cuối :
+
+<code>
+        .postbody .content img{max-width:300px}
+        .postbody .content img.c3resize{max-width:100%}
+
+</code>
+sửa 300px tùy ý
+<code>
+
+Mã: Chọn tất cả
+    <script type="text/javascript">$(function(){$(".postbody .content img").each(function(){if ($(this).height() > 600 || $(this).width() > 600) {$(this).css({'max-width' : '400px', 'max-height' : '400px'});$(this).before('<a href="javascript:void(0);" class="phongto">Click để xem kích thước thật</a>');}});$(".phongto").click(function(){$(this).next().css({'max-width' : '100%', 'max-height' : '100%'});});});</script></code>
