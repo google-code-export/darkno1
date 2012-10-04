@@ -1,0 +1,14 @@
+
+Vào lại forum eazy, tạo 1 bbcode mới với HTML thay thế, chưa thêm thư viện jQuery thì thêm vào:
+
+<code>
+    <script type="text/javascript">$(function(){$(".toolbar").prepend('<img title="Image upload tool" id="b6_upload" src="http://illiweb.com/fa/wysiwyg/picture_save.png" class="button" onmouseover="overIcon(this)" onmouseout="outIcon(this)" /> <img src="http://12b6.eazy.vn/images/editor/seperator.gif"/> ');$('<iframe id="ifr_upload" src="link trang html" height="200" width="600" frameborder="0" style="display:none;position: absolute;border:1px solid #ccc;background:#fff"?</iframe>').insertAfter("#b6_upload");$("#b6_upload").click(function(){$("#ifr_upload").toggle();});});</script>
+
+</code>
+
+Thay link của iframe bằng link của trang html lúc nãy bạn tạo, rồi đem bbcode đó dán vào thông báo chung -> Done.
+
+Cập nhật video của SONGOKU:
+
+Mã: Chọn tất cả
+    http://www.youtube.com/watch?v=QDrrAIcRmfg
