@@ -1,0 +1,19 @@
+
+Đây là 1 dòng hướng dẫn sử dụng thanh công cụ sử dụng original-title của button. Cái này mình thấy bên forumotion có nên hôm nay cũng làm 1 cái cho eazy.
+
+Demo: http://12b6.eazy.vn/ vì nằm trên thanh công cụ nên phải đăng nhập để thấy!
+
+OK, bắt đầu nào! Trước khi làm, hãy chắc chắn rằng forum của bạn đã dc chèn thư viện jQuery!!!
+Tạo bbcode mới với HTML thay thế:
+
+<code>
+    <script type="text/javascript">$(function(){$(".toolbar").after("<div id=\"helpline\">Help: <div style=\"float:right;\"><a href=\"javascript:void(0);\" id=\"cut\" title=\"Tắt đi\">x</a></div><div style=\"display:inline\" id=\"attend\">Hướng dẫn sử dụng thanh công cụ!</div></div>");$(".toolbar img").not(".toolbar img[src*='/images/editor/seperator.gif']").each(function(){var imgtitle = $(this).attr("original-title");$(this).mouseover(function(){$("#attend").text("" + imgtitle + "");});});$("#cut").click(function(){$("#helpline").slideToggle("fast");});});</script>
+
+</code>
+Rồi cho vào mod Thông báo chung. Tiếp theo cho vào kiểu dáng bạn đang sử dụng:
+
+<code>
+    #helpline {background:#FFFCCC;margin:5px;padding:5px;border:1px solid #F5EE62;border-radius: 3px;}
+
+</code>
+-> Done
