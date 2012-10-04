@@ -1,0 +1,12 @@
+
+Viết trên vấn đề ở viewtopic.php?f=97&t=20439
+
+OK, ko dài dòng, bắt đầu nào.
+
+Tạo bbcode với HTML thay thế:
+
+<code>
+    <script src="http://code.jquery.com/jquery-latest.js"></script><script type="text/javascript" src="http://latex.codecogs.com/editor3.js"></script><script type="text/javascript">$(function(){$(".toolbar").append("<a href=\"javascript:OpenLatexEditor('testbox','html','');\"><img class=\"button\" onmouseout=\"outIcon(this)\" onmouseover=\"overIcon(this)\" src=\"http://boxmath.vn/4rum/images/editor/equationeditor.png\" width=\"20\" height=\"20\" /></a>");});</script>
+</code>
+
+Demo: http://12b6.eazy.vn phải đăng nhập mới thấy dc nhé!
