@@ -40,3 +40,89 @@ http://a.imageshack.us/img716/6890/chiplovebiz13062012d.jpg
 + Trang cá nhân của thành viên là http://designs.eazy.vn/memberlist.php?m ... file&u=328 ==> ID: 328
 -- Phải có đủ khả năng mới edit lại code. Mình không chịu trách nhiệm cho bất cứ sự sai sót nào từ việc edit của các bạn
 Hết . Chúc các bạn thành công
+
+<code>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://plugin.hnsv.com/sinhvat/stat/main.js"></script>
+    <script>
+    var ktopx_insert='.inner:eq(0)';
+    var ktopx_hide='.inner:eq(0)';
+    </script>
+    <style>
+    #ktopx{text-align:left; background: #fff}
+    #ktopx td{white-space:nowrap}
+    #ktopx #box_3 tr > td{padding:8px}
+    #ktopx .line{background:none repeat-x scroll 0 0 #E9E9E9;border-top:1px solid #CECECE;color:#3E3E3E;height:5px;padding:4px 10px}
+    #ktopx .line a{color:#3E3E3E}
+    #ktopx .active a{color:red}
+    #ktopx #box_1 tr > td,#box_2 tr > td{padding:0}
+    #ktopx .list tr > td{border-bottom:1px dashed #CFCFCF}
+    </style>
+    <div id="ktopx">
+    <div>
+    <h2>
+       <table class="tablebg" width="100%">
+          <tbody>
+             <tr class="cat">
+                <td width="100%">
+                   <b>Thống kê điễn đàn Designs.Eazy.Vn</b>
+                </td>
+                <td style="font-size:10px">
+                   Số lượng
+                   <select id="soluong" title="Result">
+                      <option value="05">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option>
+                   </select>
+                      &nbsp;<b><a href="javascript:kthongke.reload();">Tải lại</a></b>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </h2>
+    </div>
+    <table width="100%">
+       <tbody>
+          <tr>
+             <td class="line">Thành viên mới</td>
+             <td id="list" class="line">
+                <span><a title="Thành viên mới" class="active" href="javascript:kthongke.topic('10','./eazy-api.php?get=topic&sortf=date&sorto=desc&num=');">Bài mới</a></span>
+                | <span><a href="javascript:kthongke.topic('10','./eazy-api.php?get=topic&sortf=views&sorto=desc&num=');">Xem nhiều</a></span>
+                | <span><a href="javascript:kthongke.topic('10','./eazy-api.php?get=topic&sortf=date&sorto=desc&forum=4&num=');">Thông báo</a></span>
+                | <span><a href="javascript:kthongke.topic('10','./eazy-api.php?get=topic&sortf=date&sorto=desc&forum=42,28&num=');">Học tập</a></span>
+             </td>
+          </tr>
+          <tr>
+             <td width="200px" valign="top">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                   <tbody style="display:none" id="loading_box_1"><tr><td>Đang tải...</td></tr></tbody>
+                   <tbody id="box_1"></tbody>   
+                </table>
+             </td>      
+             <td valign="top" style="padding: 6px; border-left: 1px dashed #c1c1c1;" rowspan="3">
+                <table width="100%" height="198" cellspacing="0" cellpadding="4" border="0">
+                   <tbody class="list">
+                      <tr height="1">
+                         <td><i>Bài viết</i></td>
+                         <td><i>Gửi bởi</i></td>
+                         <td><i>Trả lời</i></td>
+                         <td><i>Xem</i></td>
+                         <td><i>Chuyên mục</i></td>
+                      </tr>
+                   </tbody>
+                   <tbody valign="top" style="display:none" id="loading_box_3"><tr><td>Đang tải...</td></tr></tbody>
+                   <tbody valign="top" id="box_3"></tbody>
+                </table>
+             </td>
+          </tr>   
+          <tr>
+             <td class="line">Thành viên tích cực</td>
+          </tr>
+          <tr>
+             <td width="200px" valign="top">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                   <tbody style="display:none" id="loading_box_2"><tr><td>Đang tải...</td></tr></tbody>
+                   <tbody id="box_2"></tbody>
+                </table>
+             </td>
+          </tr>
+       </tbody>
+    </table>
+    </div></code>
