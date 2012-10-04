@@ -1,0 +1,54 @@
+
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    var prefixes = ["Mediafire", "Hotfile", "Megaupload", "Torrent"]; //danh sach cac prefix
+    /* Topic prefixes - Copyright © 2011 by Viet K - chinhphuc.info */
+    function toMenu(a) {
+       var htmlpre = '<select style="margin-right:5px" id="prefix" size="1"><option value="">(None)</option>';
+       for (i in a)
+       htmlpre += '<option value="' + a[i] + '">' + a[i] + '</option>';
+       htmlpre += '</select>';
+       return htmlpre;
+    }
+
+    function checkpre(ar, input) {
+       for (i in ar) {
+          var p = new RegExp("\\" + ar[i], "g");
+          var title = input.substr(0, input.indexOf(']'));
+          if (p.test(title)) return ar[i];
+       }
+       return "";
+    }
+    $(function () {
+        if (/mode=post/.test(location.search)) {
+          $(toMenu(prefixes)).insertBefore("input[name='subject'][type='text']");
+          var mw = $("#prefix").width() + 5;
+          $("input[name='subject']").css("width", $("input[name='subject']").width() - mw);
+          var t = $("[name='subject']").val();
+          var cur = checkpre(prefixes, t);
+          if (cur != "") {
+             $("[value=" + cur + "]").attr("selected", "selected");
+             $("input[name='subject']").val(t.replace('[' + cur + ']', '').trim())
+          }
+          $("input[name='post']").click(function () {
+             var sub = $("input[name='subject']").val().trim();
+             if (sub != "" && $("#prefix").val() != "") $("input[name='subject']").val("[" + $("#prefix").val() + "] " + sub)
+          })
+       }
+    });
+    </script>
+
+
+</code>
+Dòng này là tuỳ chỉnh code tuỳ theo 4rum
+
+<code>
+    var prefixes = ["Mediafire", "Hotfile", "Megaupload", "Torrent"]; //danh sach cac prefix
+
+</code>
+
+Copyright by Viet K - chinhphuc.info xin đừng xoá topic =)) =)) =))
+Đã được anh Viet K cho post lên nên chắc không vi phạm quyền sở hữu trí tuệ
+Nguồn đây :http://diendan.chinhphuc.info/t20181-prefix
