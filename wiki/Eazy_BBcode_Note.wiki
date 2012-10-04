@@ -1,4 +1,3 @@
-
 Đây là 1 mẹo để làm nổi bật nội dung bạn muốn trong bài viết. Style designed by Việt K - http://www.c3zone.net
 
 Demo: http://12b6.eazy.vn/viewtopic.php?f=30&t=42 Đăng nhập mới thấy dc nhé!
@@ -13,7 +12,7 @@ Bắt đầu nào.
 mới.
 Cách sử dụng BBcode:
 
-</code>
+<code>
     [note={SIMPLETEXT}]{TEXT}[/note]
 
 </code>
