@@ -1,0 +1,42 @@
+Dựa trên dữ liệu lấy từ Eazy API(phiên bản đầu tiên), kTopx sẽ tạo ra cho forum bạn 1 mục thống kê chuyên nghiệp giống các forum VBB.
+Demo : http://a.imageshack.us/img842/9797/chiplovebiz13062012b.jpg
+Demo online: http://designs.eazy.vn
+Cài đặt :
+Truy cập vào http://plugin.hnsv.com/sinhvat/stat/create.html và điền các mục như sau :(các hướng dẫn bên dưới có thể xem tại trang trên bằng cách rê chuột lên từng ô)
+http://a.imageshack.us/img225/443/chiplovebiz13062012m.jpg
+- Tên forum : Nhập tên forum bạn
+- Chuyên mục không thống kê: Nhập ID của các chuyên mục bạn không muốn hiện trên kTopx, nếu nhiều chuyên mục thì phân cách bằng dấu phẩy (,)
+- Chuyên mục không thống kê: Nhập ID của các thành viên bạn không muốn hiện trên kTopx, nếu nhiều thành viên thì phân cách bằng dấu phẩy (,)
+- Số lượng: Chọn số lượng mặc định
+- Chỉ hiện ở trang chủ: Chọn có nếu muốn thống kê chỉ hiện ở trang chủ
+- Tùy biến tabs(tạo thống kế cho từng box riêng, như các mục thông báo, học tập trong demo):
++ Trên 1 hàng bạn nhập ô đầu tiên là ID, nếu nhiều thì phân cách bằng dấu phẩy như trên
++ Ô thứ 2 là tên của Tabs, bạn thích đặt gì thì tùy :)
+- Bấm Tạo kTopx
+- Sẽ xuất hiện 2 khung
++ BBCODE: tạo bbcode mới [ktopx][/ktopx] với nội dung trong khung rồi dán vào MOD thông báo chung
+• trong code có đoạn
+
+<code>
+    var ktopx_insert='.inner:eq(0)';
+    var ktopx_hide='.inner:eq(0)';
+</code>
+
+Thay 2 số tăng dần 2 giá trị của 2 số 0 đến khi tìm được giá trị phù hợp cho forum bạn
+• ý nghĩa :
++ Số 0 đầu tiên : Vị trí chèn của kTopx trên trang chủ
++ Số 0 cuối cùng: Vị trí của Topx có sẵn (thay đổi tới khi Topx cũ bị mất)
+• Với subsilver thì là cặp 0-0
+• Eazy Style(test trên lab.eazy.vn) là 1-1
+
++ CSS: thêm vào cuối phần kiểu dáng của bạn đoạn code trong khung
+bạn có thể tùy biến phần này cho hợp với forum của mình
+http://a.imageshack.us/img716/6890/chiplovebiz13062012d.jpg
+-- Lưu ý : Không dùng cho forum HNSV
+-- Lấy ID của chuyên mục :
++ Link chuyên mục là http://designs.eazy.vn/viewforum.php?f=4 ==> ID=4
++ Chuyên mục, không phải là nhóm chuyên mục nha
+-- Lấy ID của thành viên:
++ Trang cá nhân của thành viên là http://designs.eazy.vn/memberlist.php?m ... file&u=328 ==> ID: 328
+-- Phải có đủ khả năng mới edit lại code. Mình không chịu trách nhiệm cho bất cứ sự sai sót nào từ việc edit của các bạn
+Hết . Chúc các bạn thành công
