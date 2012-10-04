@@ -1,4 +1,3 @@
-
 Tạo bbcode
 
 <code>
@@ -9,7 +8,7 @@ Tạo bbcode
 
 Muốn thêm 1 nhóm, chỉ cần thêm 1 đoạn
 
-</code>
+<code>
     a[style="color: #FF0303;"]:before{content: url(link hình dùng đển làm icon);padding-right:2px;}</code>
 
 
