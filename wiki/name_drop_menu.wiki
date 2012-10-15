@@ -1,0 +1,21 @@
+ode này sẽ cho bạn 1 cái menu khi click vào tên thành viên trong bài viết giống vbb, hoạt động trên eazy style.
+
+Demo: http://cntt.eazy.vn/viewtopic.php?f=557 ... 1302#p1302
+
+Tạo BBcode với html thay thế:
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script><script>$(function(){$(".postprofile dt center a").each(function(){var htmlavt = $(this).parent().parent().parent().parent().children("a").html();var htmlname = $(this).parent().html();var name = $(this).text();var linkname = $(this).attr('href').replace('./memberlist.php?mode=viewprofile&u=','');$(this).append(' <img src="http://illiweb.com/fa/invision/menu_action_down.gif"/>');$(this).after('<div class="drop"><table width="90%"><tr><td vlign="top" class="resizeavt">' + htmlavt + '</td><td><table><tr><td>' + htmlname + '<hr/><img src="http://hitskin.com/themes/18/09/33/i_icon_profile.png"/><a href="/memberlist.php?mode=viewprofile&u=' + linkname + '">Lý lịch</a><hr/><img src="http://hitskin.com/themes/18/09/33/i_icon_pm.png"/><a href="/ucp.php?i=pm&mode=compose&u=' + linkname + '">Gửi tin nhắn</a><hr/></td></tr></table></td></tr><tr><td><img src="http://hitskin.com/themes/18/09/33/i_icon_msnm.png"/><a href="/ucp.php?i=zebra&add=' + name + '">Thêm bạn thân</a></td><td><img src="http://12b6.forum-viet.com/users/1214/94/30/93/album/wall10.png"/><a href="/ucp.php?i=zebra&mode=foes&add=' + name + '">Thêm kẻ thù</a></td></tr><tr><td style="padding-right:5px;" colspan="2"><hr/></td></tr><tr><td><img src="http://hitskin.com/themes/18/09/33/i_icon_email.png"/><a href="/memberlist.php?mode=email&u=' + linkname + '">Gửi mail</a></td><td><img src="http://12b6.forum-viet.com/users/1214/94/30/93/album/icon_s10.png"/><a href="/search.php?author_id=' + linkname + '&sr=posts">Xem bài viết</a></td></tr></table></div>');$(this).click(function(){$(this).next().toggle();});$(this).attr('href','javascript:void(0);');});});
+    </script></code>
+
+
+
+Cho vào kiểu dáng các bạn đang sử dụng:
+
+<code>
+    .drop {position:absolute;display:none;border:1px solid #ccc; border-radius:3px;background: #fff;width:220px}
+    .resizeavt img{max-height:50px;max-width:50px;}
+</code>
+
+
+Tự sửa lại cho đẹp nhé!
