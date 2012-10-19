@@ -1,0 +1,70 @@
+Code mình cũng đã ko còn dùng và cũng ko cần dùng vì forum mình là forum lớp ^^
+
+http://np7.upanh.com/b3.s28.d3/a4205c1d102e04c397ab295622bba4bd_48474657.dienvietnam.jpg
+
+Ai làm được thì reply topic cho mình 1 cái demo sống nhé!
+
+Tạo bbcode và phang hết đoạn này vào.
+Eazy style:
+
+<code>
+    <script type="text/javascript" src="http://ajax.Googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">$(function(){$('<center><a href="link quảng cáo"><img src="link ảnh"/></a></center>').insertAfter(".forabg:first");});</script>
+
+</code>
+
+Trong đó
+
+<code>
+    .forabg:first
+
+</code>
+Là vị trí đặt quảng cáo. Để di chuyển quảng cáo hoặc đặt quảng cáo vào vị trí khác, có các vị trí.
+1/ Vị trí đầu tiên
+
+<code>
+    .forabg:first
+</code>
+
+hoặc
+
+<code>
+    .forabg:eq(0)
+</code>
+
+2/ Vị trí tiếp theo
+
+<code>
+    .forabg:eq(1);
+</code>
+
+Và cứ như thế, thay vị trí thì thay con số 1
+
+VD: vị trí thứ 2 thì có code
+
+<code>
+    .forabg:eq(1)
+</code>
+
+Vị trí thứ 3:
+
+<code>
+    .forabg:eq(2)
+</code>
+
+
+Vị trí được đếm từ trên xuống, nên viewsource để nắm rõ thứ tự.
+
+we_clearblue:
+
+<code>
+    <script type="text/javascript" src="http://ajax.Googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">$(function(){$('<center><a href="link quảng cáo"><img src="link ảnh"/></a></center>').insertAfter(".forums-wrapper:first");});</script>
+
+
+</code>
+Xem thứ tự trên eazy style
+
+Chèn thư viện jQuery nếu ai chưa chèn.
+
+Ai dùng style khác mà ko làm dc, hay reply tại đây, mình sẽ làm cho style đó. Ai làm đc hãy nhấn thanks ;)
