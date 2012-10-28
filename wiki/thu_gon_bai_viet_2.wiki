@@ -1,0 +1,53 @@
+Demo: http://toan.eazy.vn/viewtopic.php?f=99&t=31
+
+Update ver 2.0:
+* Có gì mới?
+
+    -- Tùy biến câu lệnh
+    -- Vẫn giữ style cũ
+    -- Thêm nút bật/tắt chức năng thu gọn có sử dụng cookie
+    -- Thêm link ảnh cho nút bật/tắt
+
+
+
+* Hướng dẫn tùy biến:
+
+    -- Độ dài tối đa: thay đổi giá trị dodaitoida = 300, nếu bài viết dài quá con số này thì sẽ tự động thu gọn.
+    -- Độ dài hiển thị: thay đổi giá trị dodaihienthi = 350, độ dài hiển thị sau khi dc rút gọn
+    Những cái còn lại thì nhìn chắc đủ biết rồi, ai thắc mắc xin hãy reply tại đây!
+
+
+
+* Cách làm:
+-- Cho vào kiểu dáng bạn đang sử dụng
+
+Mã: Chọn tất cả
+    .shortview {display:none;}
+    .jkon {display:none;}
+    .jkoff, .jkon {float:right;}
+
+
+-- Tạo bbcode và cho vào mod thông báo chung
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script><script type="text/javascript">
+    var dodaitoida = 300;
+    var dodaihienthi = 350;
+    var textfullview = 'Xem đầy đủ';
+    var textshortview = 'Thu gọn';
+    var turnon = 'Bật chức năng thu gọn';
+    var turnoff = 'Tắt chức năng thu gọn';
+    var imgon = 'http://i48.servimg.com/u/f48/16/58/89/73/power_11.png';
+    var imgoff = 'http://i48.servimg.com/u/f48/16/58/89/73/power_10.png';
+    function setCookie(e,a,b){var c=new Date;c.setDate(c.getDate()+b);a=escape(a)+(null==b?"":"; expires="+c.toUTCString());document.cookie=e+"="+a}function getCookie(e){var a,b,c,d=document.cookie.split(";");for(a=0;a<d.length;a++)if(b=d[a].substr(0,d[a].indexOf("=")),c=d[a].substr(d[a].indexOf("=")+1),b=b.replace(/^\s+|\s+$/g,""),b==e)return unescape(c)};$(function(){$(".postbody .content").each(function(){var $baivietdai = $(this);if ($baivietdai.height() > dodaitoida) {$(this).after('<br/><hr/><span class="jk"></span><span class="jknote"><b>Bài viết đã được thu gọn: </b></span><a href="javascript:void(0);" class="fullview">'+textfullview+'</a><a href="javascript:void(0);" class="shortview">'+textshortview+'</a><a href="javascript:void(0);" class="jkoff"><img src="'+imgoff+'"/>'+turnoff+'</a><a href="javascript:void(0);" class="jkon"><img src="'+imgon+'"/>'+turnon+'</a><br/>');$(this).css({'height':''+dodaihienthi+'','overflow':'hidden'});};$(".fullview").click(function(){$baivietdai.css({'height':'100%'});$(this).hide();$(this).next().show();$(this).prev().hide();});$(".shortview").click(function(){$baivietdai.css({'height':''+dodaihienthi+'','overflow':'hidden'});$(this).hide();$(this).prev().show();$(this).prev().prev().show();});$(".jkoff").click(function(){setCookie('fullview','on');$baivietdai.css({'height':'100%'});$(this).hide();$(".fullview, .shortview, .jknote").hide();$(".jk").replaceWith('<span class="jknote2"><b>Bạn đã tắt chức năng thu gọn bài viết.</b></span>');$(this).next().show();});if (getCookie('fullview') == 'on') {$(".jk").replaceWith('<span class="jknote2"><b>Bạn đã tắt chức năng thu gọn bài viết.</b></span>');$baivietdai.css({'height':'100%'});$(".jkoff").hide();$(".jkon").show();$(".fullview, .shortview, .jknote").hide();};$(".jkon").click(function(){$baivietdai.css({'height':''+dodaihienthi+'','overflow':'hidden'});setCookie('fullview', null);$(this).hide();$(".shortview, .jkoff").show();$(".jknote2, .shortview").hide();$(".jknote, .fullview").show();});});});</script>
+
+</code>
+Ai đã có thư viện jquery rồi thì bỏ đoạn này ra:
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+
+</code>
+* Lưu ý: Chỉ sử dụng cho Eazy Style, các skin hầu hết đều có giá trị mặc định cho class content khá lớn, các bạn nên xem kỹ trong css để điều chỉnh cho phù hợp.
+
+* Ý tưởng và icon lấy từ fmvi.vn
