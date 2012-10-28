@@ -21,11 +21,11 @@ Update ver 2.0:
 * Cách làm:
 -- Cho vào kiểu dáng bạn đang sử dụng
 
-Mã: Chọn tất cả
+<code>
     .shortview {display:none;}
     .jkon {display:none;}
     .jkoff, .jkon {float:right;}
-
+</code>
 
 -- Tạo bbcode và cho vào mod thông báo chung
 
