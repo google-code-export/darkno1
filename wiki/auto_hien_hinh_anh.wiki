@@ -1,0 +1,32 @@
+Khi Các Bạn Post Link Có Đuôi Là : gif,png,jpg,jpeg,bmp Sẽ Auto Hiện Hình Ảnh
+
+Không Có Demo
+
+Code :
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script><script type="text/javascript">$(function(){$("a").each(function(){$(this).filter(function() {return /\.(gif|png|jpg|jpeg|bmp)$/i.test($(this).attr('href'));}).replaceWith('<img src="'+$(this).attr('href')+'"/>');});});</script>
+</code>
+
+
+Ai Đã Có Thư Viện jQuery Thì Bỏ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script> Ra Nhá
+
+Code Bị Đụng Với Newtab ^^!
+
+Update Cách Không Đụng Của Anh Dothinh
+
+    dothinh1105 đã viết:Muốn ko bị đụng thì kiểm tra thêm vào
+
+<code>
+        <script type="text/javascript">$(function(){$(".postbody .content a").each(function(){$(this).filter(function() {return /\.(gif|png|jpg|jpeg|bmp)$/i.test($(this).attr('href'));}).replaceWith('<img src="'+$(this).attr('href')+'"/>');});});</script>
+</code>
+
+    Hoặc kỹ hơn nữa thì kiểm tra đang ở trong topic
+
+<code>
+        <script type="text/javascript">$(function(){if ($(".author:).length) {$(".postbody .content a").each(function(){$(this).filter(function() {return /\.(gif|png|jpg|jpeg|bmp)$/i.test($(this).attr('href'));}).replaceWith('<img src="'+$(this).attr('href')+'"/>');});}});</script>
+
+</code>
+
+
+Viết Bởi Jokerteam
