@@ -9,7 +9,7 @@ Code :
 </code>
 
 
-Ai Đã Có Thư Viện jQuery Thì Bỏ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script> Ra Nhá
+Ai Đã Có Thư Viện jQuery Thì Bỏ <code><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script></code> Ra Nhá
 
 Code Bị Đụng Với Newtab ^^!
 
