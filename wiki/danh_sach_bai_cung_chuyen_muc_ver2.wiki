@@ -1,0 +1,89 @@
+http://nq4.upanh.com/b4.s29.d2/ed1384392227368fefcbf30e89755c27_49021564.demo.bmp
+
+* Lưu ý đây là code đã chỉnh lại cho đẹp, code dưới đây đơn giản chỉ là cái list thôi, ai ko thích thì tự edit lại nhé!
+* Chỉ chạy trên Eazy style.
+* Cách làm:
+-- Tạo bbcode mới rồi nhét vào mod thông báo chung!!!
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script><script type="text/javascript">$(function(){
+    var sobaiviet = 10;
+    if ($(".first").not(".first:contains('Re: ')").length) {$(".content:first").after('<br/><hr/><b>Các bài viết cùng chuyên mục</b><ol start="1" id="cungchuyenmuc"></ol>');$.getJSON('/eazy-api.php?get=topic&num='+sobaiviet+'&forum='+$("a.left-box").attr('href').slice(18)+'&sortf=date&sorto=desc', function (items) {var container = $('#cungchuyenmuc');$(items.output).each(function (i, item) {var html = '<li><a class="nganlai" href="/viewtopic.php?f=' + item.forum_id + '&t=' + item.topic_id + '">' + item.topic_title + '</a> gửi bởi <a href="/memberlist.php?mode=viewprofile&u=' + item.user_id + '" style="color:#' + item.user_colour + '" class="username-coloured">' + item.username + '</a></li>';container.append(html);$("a.nganlai").each(function(){if ($(this).text().length > 40) {$(this).text($(this).text().slice(0, 39));$(this).append('...');}});});});}});</script>
+</code>
+
+Ai đã có thư viện jQuery rồi thì bỏ đoạn này ra:
+
+<code>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript"></script>
+
+
+</code>
+* Thêm vào kiểu dáng đang sử dụng:
+
+<code>
+    #cungchuyenmuc {margin-left:20px;}
+
+</code>
+
+* Hướng dẫn chỉnh sửa:
+
+    * Ai ko thích đánh số thì đoạn:
+
+<code>
+        <ol start="1" id="cungchuyenmuc">.....</ol>
+</code>
+
+    Sửa lại thành:
+
+<code>
+        <div id="cungchuyenmuc">....</div>
+
+</code>
+    Tìm tiếp:
+
+<code>
+        <li>...</li>
+</code>
+
+    Sửa thành:
+
+<code>
+        <div>....</div>
+</code>
+
+
+    * Giải thích code rút ngắn link: Ở code trên, đoạn:
+
+<code>
+        if ($(this).text().length > 40
+</code>
+
+    Số 40 là độ dài tối đa cho link, nếu link nào dài quá 40 ký tự, sẽ tự động dc rút ngắn xuống 39 ký tự và thêm dấu "...", tương ứng với đoạn:
+
+<code>
+        slice(0, 39)
+
+</code>
+    Như vậy, thay đổi số 40 sẽ thay đổi độ dài tối đa cho link, và số 39 sẽ là số ký tự hiển thị sau khi dc rút ngắn, ngoài ra ko cần chỉnh sửa gì thêm.
+
+    * Thay đổi số bài viết theo ý muốn: Tìm đoạn:
+
+<code>
+        var sobaiviet = 10;
+
+</code>
+    Thay số 10 thành số bài viết mà bạn muốn hiển thị -> Done
+
+
+
+* Update log:
+<code>
+    * ver 2.0: Chỉ hiện ở first post, sang trang 2 cũng ko hiện.
+    * Ver 2.1:
+    -- Rút gọn link quá dài.
+    -- Đánh số thứ tự.
+    -- Cho phép thay đổi số bài viết theo ý muốn.
+
+</code>
+
+Hãy chia sẻ các style do mình tự chỉnh sửa để làm phong phú thêm cho TUT này, và để cho mọi người có thêm nhiều lựa chọn!!!
