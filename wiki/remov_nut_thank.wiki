@@ -1,0 +1,1 @@
+<code>    <script type="text/javascript">$(function(){$('a[href*="&mode=remove"]').parent().remove();});</script></code>
