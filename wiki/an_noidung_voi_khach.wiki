@@ -1,0 +1,36 @@
+Cách Làm :
+Tạo 1 BBCode :
+
+Cách Sử Dụng BBCode Là :
+
+<code>
+    [an]{TEXT}[/an]
+
+</code>
+
+Mã HTML Thay Thế
+
+<code>
+    <div id="annoidung">{TEXT}</div>
+
+</code>
+
+Tạo 1 BBCode Khác Với Mã HTML Là :
+
+<code>
+    <script type="text/javascript">$(function(){if($('a[href*="login"]').length){$('#annoidung').replaceWith('Nội Dung Đã Được Ẩn Với Khách');};});</script>
+
+
+</code>
+
+Chỉ Cần Bỏ Nội Dung Cần Hide Với Khách Vào :
+
+[an]Nội Dung Cần Hide[/an]
+
+Logout Ra Sẽ Thấy :
+
+Nội Dung Cần Hide Sẽ Thành :
+
+Nội Dung Đã Được Ẩn Với Khách
+
+Demo : http://toan.eazy.vn/viewtopic.php?f=100&p=114#p114
