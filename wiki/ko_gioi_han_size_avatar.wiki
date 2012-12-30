@@ -1,0 +1,19 @@
+Mình thấy 1 điều vô cùng khó chịu ở Eazy đó là avatar ko tự resize, mà có ô bên dưới để điền, cái này thì ko mem nào biết cả :-ss
+
+Hôm nay mình sẽ hướng dẫn các bạn 1 cách đơn giản để mem dùng bất cứ ảnh nào làm avatar cũng dc.
+
+Bước 1: vào ACP -> Tổng quát -> Thiết lập hình đại diện -> Kích thước hình đại diện tối đa cho phép: Điền bao nhiêu cũng dc, 1000 x 1000 cũng ko sao.
+Bước 2: ACP -> Giao diện -> kiểu dáng: Xoá tất cả đoạn có
+
+<code>
+    .left-box dt img
+
+</code>
+Sau đó chèn vào cuối
+
+<code>
+    img[alt="Hình đại diện của thành viên"] {max-height:120px;max-width:120px}
+</code>
+
+
+Rất đơn giản phải ko nào? Giờ thì hết ai than phiền vụ avatar nữa nhé ;)
