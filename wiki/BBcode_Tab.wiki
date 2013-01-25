@@ -1,0 +1,214 @@
+Không rõ là Eazy có bbcode này chưa, theo một số bài mình xem bên box hỗ trợ thì vẫn chưa.
+
+Bản quyền: Mod by fmvi - chipteam (http://chip.eazy.vn/)
+
+Demo:
+http://i12.servimg.com/u/f12/17/70/81/78/1-12-210.png
+http://design.eazy.vn/viewtopic.php?f=78&t=111
+
+Hướng dẫn:
+
+Bước 1: Thêm vào cuối CSS:
+ACP >> Giao điện >> Kiểu dáng >> Sửa:
+
+<code>
+    .etabs {
+       line-height: normal;
+       min-width: 570px;
+       display: none;
+    }
+
+    .ctabs {
+       border: 1px solid #DDDDDD;
+       box-shadow: 0 1px 0 white inset, 1px 0 0 white inset, -1px 0 0 white inset;
+       display: none;
+       margin-top: -1px;
+       padding: 10px;
+    }
+
+    .utabs {
+       margin:0!important;
+       padding: 0;
+       list-style: none;
+       overflow: hidden;
+    }
+
+    .ltabs {
+       display: inline;
+       margin: 0;
+       padding: 0;
+       font-size: 1em;
+       font-weight: bold;
+    }
+
+    .atabs {
+       text-decoration: none;
+       position: relative;
+       cursor: pointer;
+       float: left;
+       display: block;
+       padding: 0 5px;
+       white-space: nowrap;
+       border: 1px solid #D7D7D7;
+       border-radius: 5px 5px 0 0;
+       -moz-border-radius: 5px 5px 0 0;
+       -webkit-border-radius: 5px 5px 0 0;
+       font: normal 11px "helvetica neue", helvetica, arial, sans-serif;
+       margin-right: -1px;
+       background: #EDEDED url('http://web.eazy.vn/images/styles/eazystyle-rolex/form-button-white-25px.png') repeat-x top;
+       box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+       -moz-box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+       -webkit-box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+    }
+
+    .atabs span {
+       float: left;
+       display: block;
+       background: none;
+       padding: 6px 5px;
+       color: #444;
+       white-space: nowrap;
+       white-space: nowrap;
+    }
+
+    .etabs .activetab .atabs span {
+       background-position: 100% 0;
+       padding-bottom: 7px;
+       color: #333333;
+    }
+
+    .etabs .atabs:hover  {
+       background-color: #ddd;
+    }
+
+    .atabs:hover span {
+       background-position:100% -70px;
+    }
+
+    .etabs .activetab .atabs:hover {
+       background-position: 0 0;
+    }
+
+    .etabs .activetab .atabs:hover span {
+       color: #000000;
+       background-position: 100% 0;
+    }
+
+    .etabs .atabs:hover span {
+       color: #222;
+    }
+
+    .etabs .activetab .atabs{
+       border-bottom: 1px solid white;
+       margin-bottom: -5px;
+       box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+       -moz-box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+       -webkit-box-shadow: inset 0 1px 0 white,inset 1px 0 0 white,inset -1px 0 0 white;
+       background: rgb(242,242,242);
+       background: -moz-linear-gradient(top,  rgba(242,242,242,1) 0%, rgba(255,255,255,1) 60%);
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(60%,rgba(255,255,255,1)));
+       background: -webkit-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,1) 60%);
+       background: -o-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,1) 60%);
+       background: -ms-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,1) 60%);
+       background: linear-gradient(to bottom,  rgba(242,242,242,1) 0%,rgba(255,255,255,1) 60%);
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 );
+
+    }
+</code>
+
+* Style BBcode tab được lấy từ style Panel tab trong skin Eazy Style Sidebar.
+
+Bước 2: Tạo BBcode tabs, tabs, tabjs
+ACP >> Gửi bài viết >> Tùy biến thẻ BBCode >> Tạo thẻ BBcode mới
+BBcode tabs:
+Cách sử dụng thẻ BBCode:
+
+<code>
+    [tabs]{TEXT}[/tabs]
+
+</code>
+Mã HTML thay thế:
+<code>
+    <div class="etabs"><ul class="utabs"></ul>{TEXT}</div>
+
+</code>
+Không check vào Hiện trên trang gửi bài
+BBcode tab:
+Cách sử dụng thẻ BBCode:
+
+<code>
+    [tab={INTTEXT}]{TEXT}[/tab]
+
+</code>
+Mã HTML thay thế:
+
+<code>
+    <div class="ctabs" title="{INTTEXT}">{TEXT}<div style="height:0px; clear:both;"></div></div>
+
+</code>
+Không check vào Hiện trên trang gửi bài
+BBcode tabjs:
+Cách sử dụng thẻ BBCode:
+
+<code>
+    [tabjs][/tabjs]
+
+</code>
+Mã HTML thay thế:
+
+<code>
+    <script type="text/javascript">function fmvitab() {
+       var a = prompt("Đặt tiêu đề cho tab này!", "");
+       null != a && comm._HTML("[tab=" + ("" == a ? "Không tên" : a) + "]", "[/tab]")
+    }
+    $(function () {
+
+       $("#message-box .toolbar2:first").prepend('<img title="[tabs]tab-item[/tabs]" onmouseout="outIcon(this)" onmouseover="overIcon(this)" onclick="comm._HTML(\'[tabs]\', \'[/tabs]\')" class="button" src="http://i12.servimg.com/u/f12/17/70/81/78/tabs10.png" /> <img title="[tab]text[/tab]" onmouseout="outIcon(this)" onmouseover="overIcon(this)" onclick="fmvitab()" class="button" src="http://i12.servimg.com/u/f12/17/70/81/78/13553110.png" />');
+
+       if ($(".content .etabs").length) {
+          $(".content .etabs > br").remove()
+          $(".content .etabs").each(function () {
+             var $tb = $(this);
+             if ($tb.find(".ctabs").length) {
+                $tb.find(".ctabs").each(function () {
+                   $tb.find(".utabs").append("<li class='ltabs'><a class='atabs' href='javascript:void(0)'><span>" + $(this).attr("title") + "</span></a></li>");
+                   $tb.find(".ltabs:first").addClass("activetab");
+                   $tb.find(".atabs").click(function () {
+                      $tb.find(".ltabs").removeClass("activetab");
+                      $(this).parent().addClass("activetab");
+                      $tb.find(".ctabs").hide();
+                      $tb.find(".ctabs[title='" + $(this).text() + "']").show();
+                   });
+                });
+                $tb.find(".ctabs:first").show();
+             } else {
+                $(this).empty()
+             }
+          }).fadeIn(300)
+       }
+
+    })</script>
+</code>
+
+Không check vào Hiện trên trang gửi bài
+
+Bước 3: Sử dụng BBcode cho thành viên và khách
+ACP >> MOD >> Thông báo chung:
+Thêm BBcode tabjs vào Nội dung thông báo
+
+<code>
+    [tabjs][/tabjs]
+</code>
+
+Chỉnh Cấu hình thông báo chung:
+
+    Hiện thông báo chung: Có
+    Chỉ hiện thông báo chung ở trang chủ: Không
+    Hiển thị thông báo khác tới khách: Có
+    Hiện thông báo chung tới: Mọi người
+
+
+Ghi chú:
+Nếu các bạn có sử dụng một file javascript chung cho 4rum thì bạn nên đặt javascript trong BBcode tabjs vào đó, tránh đặt nhiều javascript nội tuyến.
+Nếu bạn chưa thay thế file javascript sử dụng trong bài này viewtopic.php?f=97&t=21696 thì không cần làm bước BBcode tabjs và bước 3 vì mình đã thêm vào rồi.
+Để đồng bộ với skin đang dùng, bạn chỉ cần thêm các selector tương ứng trong css của Panel tab.
