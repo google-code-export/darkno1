@@ -202,10 +202,10 @@ Thêm BBcode tabjs vào Nội dung thông báo
 
 Chỉnh Cấu hình thông báo chung:
 
-    Hiện thông báo chung: Có
-    Chỉ hiện thông báo chung ở trang chủ: Không
-    Hiển thị thông báo khác tới khách: Có
-    Hiện thông báo chung tới: Mọi người
+    * Hiện thông báo chung: Có
+    * Chỉ hiện thông báo chung ở trang chủ: Không
+    * Hiển thị thông báo khác tới khách: Có
+    * Hiện thông báo chung tới: Mọi người
 
 
 Ghi chú:
