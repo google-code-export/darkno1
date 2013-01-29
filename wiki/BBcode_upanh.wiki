@@ -1,0 +1,54 @@
+Cách này sử dụng trang up ảnh miễn phí http://servimg.com
+
+Demo: http://12b6.eazy.vn -> vào bất kỳ topic nào và nhìn ở thanh công cụ, có thêm 1 nút http://illiweb.com/fa/wysiwyg/picture_save.png, tất nhiên là nằm trên thanh công cụ nên phải đăng nhập mới thấy dc!
+
+Để làm dc, yêu cầu bạn phải có 1 forum thuộc hệ thống Forumotion, đăng ký ở http://forumotion.com , việc này chỉ yêu cầu bạn tạo và đăng nhập vào 1 lần duy nhất, sau đó bỏ luôn ko vào lại cũng dc.
+
+Sau khi đăng ký và đăng nhập thành công vào forum vừa tạo, bạn hãy truy cập vào bảng quản trị của forum vừa tạo, khi vừa vào tới, bạn sẽ thấy 2 nút là Simple và Advanced, hãy chọn Advanced để tab Modules hiện ra. Tiếp theo vào tiếp tab Modules -> HTML pages management -> Click Create new HTML page
+
+* Title: Upload image
+* Do you wish to use your forum header and footer ?: No
+* Use this page as homepage ?: No
+* Dán toàn bộ code này vào trong!
+
+Spoiler:<code>
+
+    <html>
+    <head>
+    <script language="JavaScript" type="text/javascript">
+    var t = setTimeout("document.myform.submit();", 100);</script>
+    </head>
+    <body>
+    <form action="http://www.servimg.com/forum_upload.php?account=email đăng ký&id=cbefbe&f=2818983" method="post" name="myform" style="display:none;"><input name="login" value="email đăng ký" type="text"><input name="password" type="text" value="Password đăng ký"></form>
+    </form>
+    </body>
+    </html>
+</code>
+
+
+Hãy để ý 2 chỗ màu đỏ là chỗ bạn cần thay email và password khi đăng ký. Xong đâu đấy save lại và lấy cái link của trang html đó.
+
+    Nguyễn Đạt đã viết:Update từ Nguyễn Đạt :D
+
+    Phải vào tab Misc > Image Host
+
+    Servimg account, điền email đăng ký diễn đàn vào, click sửa chữa.
+
+    Servimg password <-- điền password đăng ký diễn đàn vào. Khi nó báo Congratulations tức là tài khoản Servimg đã được kích hoạt.
+
+
+
+
+Vào lại forum eazy, tạo 1 bbcode mới với HTML thay thế :
+<code>
+    <script type="text/javascript">$(function(){$(".toolbar").prepend('<img title="Image upload tool" id="b6_upload" src="http://illiweb.com/fa/wysiwyg/picture_save.png" class="button" onmouseover="overIcon(this)" onmouseout="outIcon(this)" /> <img src="http://12b6.eazy.vn/images/editor/seperator.gif"/> ');$('<iframe id="ifr_upload" src="link trang html" height="200" width="600" frameborder="0" style="display:none;position: absolute;border:1px solid #ccc;background:#fff"?</iframe>').insertAfter("#b6_upload");$("#b6_upload").click(function(){$("#ifr_upload").toggle();});});</script>
+</code>
+
+
+Thay link của iframe bằng link của trang html lúc nãy bạn tạo, rồi đem bbcode đó dán vào thông báo chung -> Done.
+
+Cập nhật video của SONGOKU:
+
+<code>
+    http://www.youtube.com/watch?v=QDrrAIcRmfg
+</code>
