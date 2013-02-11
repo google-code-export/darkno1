@@ -3,8 +3,7 @@
 Demo : Update
 
 Code :
-
-Mã: Chọn tất cả
+<code>
     <script type="text/javascript">
     var prefixes = ["Share", "Thử Ngiệm", "Event", "Thông Báo"]; //danh sach cac prefix
     var _pm = false; //true: cho phep prefix khi gui tin nhan
