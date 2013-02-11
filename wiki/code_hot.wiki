@@ -48,7 +48,7 @@ Code :
     </script>
 
 
-
+</code>
 
 2 . HideThank
 
@@ -68,6 +68,8 @@ Code Và Css :
 <code>
     http://code-byn.googlecode.com/svn/thankhide.txt
 </code>
+
+
 <code><!-- ThankHide - Byn.Pro -->
 
 
