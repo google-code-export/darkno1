@@ -1,0 +1,13 @@
+   http://nw6.upanh.com/b4.s34.d3/5eaca3aaffa4d2d30544f8acf50d4c9a_54724246.picture.png
+
+<code>
+ textarea.inputbox {
+
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 2px;
+    background: white url(http://mobiblog.org/images/gian.gif) no-repeat top left;
+    }
+</code>
