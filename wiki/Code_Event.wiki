@@ -1,0 +1,357 @@
+1. Tiền Tố
+
+Demo : Update
+
+Code :
+
+<code>
+
+    <script type="text/javascript">
+    var prefixes = ["Share", "Thử Ngiệm", "Event", "Thông Báo"]; //danh sach cac prefix
+    var _pm = false; //true: cho phep prefix khi gui tin nhan
+
+    /* Topic prefixes - Copyright © 2011 by Viet K - chinhphuc.info */
+
+    var chk = false;
+    function toMenu(a) {
+       var htmlpre = '<select style="margin-right:5px" id="prefix" size="1"><option value="">(None)</option>';
+       for (i in a)
+       htmlpre += '<option value="' + a[i] + '">' + a[i] + '</option>';
+       htmlpre += '</select>';
+       return htmlpre;
+    }
+
+    function checkpre(ar, input) {
+       for (i in ar) {
+        var p = new RegExp("\\" + ar[i], "g");
+        var title = input.substr(0, input.indexOf(']'));
+        if (p.test(title)) return ar[i];
+       }
+       return "";
+    }
+    $(function () {
+       if (_pm) chk = /\privmsg/.test(location.href);
+       if (/\/post/.test(location.href) || chk) {
+        $(toMenu(prefixes)).insertBefore("input[name='subject'][type='text']");
+        var mw = $("#prefix").width() + 5;
+        $("input[name='subject']").css("width", $("input[name='subject']").width() - mw);
+        var t = $("[name='subject']").val();
+        var cur = checkpre(prefixes, t);
+        if (cur != "") {
+           $("[value=" + cur + "]").attr("selected", "selected");
+           $("input[name='subject']").val(t.replace('[' + cur + ']', '').trim())
+        }
+        $("input[name='post']").click(function () {
+           var sub = $("input[name='subject']").val().trim();
+           if (sub != "" && $("#prefix").val() != "") $("input[name='subject']").val("[" + $("#prefix").val() + "] " + sub)
+        })
+       }
+    });
+    </script>
+
+</code>
+
+
+
+2 . HideThank
+
+Code này giúp mọi người che giấu đi nội dung của mình và khi thank mình mới được xem . hót lắm nhé ^^
+
+
+Bản Quyền : ChipTeam - Byn.Pro ( ChipTeam.Eazy.Vn )
+
+
+Demo :
+
+http://imageshack.us/a/img834/4265/nhchpmnhnh2013012417514.png
+Code Và Css :
+
+
+<code>
+
+    http://code-byn.googlecode.com/svn/thankhide.txt
+</code>
+
+<code>
+
+    /* ẩn nội dung */
+    .hidethank {
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 8px 8px 8px 24px;
+    border: 1px dashed #FF9A9A;
+    background: #FFF url(http://diendan.hkphone.com.vn/template/traitimhaiduong_vn/images/locked.gif) no-repeat 6px 50%;
+    font-size: 12px;
+    zoom: 1;
+    }
+
+</code>
+
+
+Ở trong Code Có Phần Text :
+
+
+Ná»™i dung Ä‘Ă£ bá»‹ áº©n. Báº¡n pháº£i nháº¥n thanks Ä‘á»ƒ xem ná»™i dung nĂ y
+Máy bạn sửa lại là :
+
+
+Nội dung đã bị ẩn. Bạn phải nhấn thanks để xem nội dung này .
+
+
+
+Rồi Vào BBcode Tạo 1 Thẻ Bbcode mới :
+
+<code>
+
+    [thank]{TEXT}[/thank]
+
+</code>
+
+<code>
+
+    http://code-byn.googlecode.com/svn/thankhidebbcode.txt
+</code>
+
+
+
+    Huy Hoàng đã viết:
+
+        kysido22 đã viết:Bạn nói hơi chung chung, mình không hiểu rõ lắm, bạn có thể giải thích rõ hơn không.
+        2 HTML đầu để ở đâu và code sau thì lấy Link đó luôn hay lấy HTML trong link để dùng
+
+
+
+
+    2 HTML đầu là bạn tạo BBcode và cho vào mod thông báo chung
+
+    2 HTML sau là bạn tạo BBcode và chọn phần thiết lập: hiện trên trang gửi bài >> đoạn này là dùng lệnh ẩn nội dung >> sử dụng như sau:
+
+    Khi mún ẩn nội dung nào đó chỉ cần clink vào button thank ở công cụ gửi bài nó sẽ có dạng như sau:
+
+    Nội Dung Ẩn Sẽ Nằm Ở Đây
+
+
+
+
+
+
+3. AvatarLastPost
+
+Demo : http://nu5.upanh.com/b3.s35.d2/e0259b7d41c7152357e3098c76dfe7c7_52985875.demo.png
+
+Code Và Css :
+
+Code :
+<code>
+
+    <script type="text/javascript"> $(function() {
+        $("li.row dd.lastpost").each(function() {
+          var $ckipavatar = $(this).find("a[href*='viewtopic.php']").attr('href');
+          $(this).before('<dd class="ckiplastavatar"><a href="javascript:void(0);"><img src="http://cdn1.iconfinder.com/data/icons/basicset/user_64.png"/></a></dd>');
+          $(this).prev("dd").load('' + $ckipavatar + ' .eazy-avatar a:last')
+        });
+    });</script>
+
+
+</code>
+
+Css :
+<code>
+
+    .ckiplastavatar img{
+       max-height:40px;
+       max-width:40px;
+       border-radius: 3px;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+       display: block;
+    }
+
+    .ckiplastavatar {
+       border: 1px solid #D7D7D7 !important;
+       padding: 2px !important;
+       border-radius: 3px;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+          margin-left: -15px;
+    }
+</code>
+
+
+
+
+4. HideCode
+
+Demo : Update
+
+Code :
+<code>
+
+    <!-- Ẩn Code Với Khách -->
+
+    <script type="text/javascript">$(function(){$("dl.codebox code").text('Hãy đăng nhặp để xem code');;});</script>
+</code>
+
+
+
+5. [Update] ChipDown
+
+Demo : Update
+
+Chức năng : Tự nhận người gửi , Tự nhận tiêu đề bài viết , tự nhận link để chia sẽ
+
+Code Và Css
+
+Code :
+
+<code>
+
+    [down={TEXT}]{URL}[/down]
+</code>
+
+
+
+<code>
+
+    <script type="text/javascript">
+    $(function(){$(".download_text #this_title").replaceWith('<strong>'+$('h3.first a').text()+'</strong>');});
+
+    $(document).ready(function () {
+       var url = $(location).attr('href');
+       $('.download_text #this_url').html('<strong>' + url + '</strong>');
+    });
+    </script>
+    <div class="downbg">
+         <p style="padding:15px 0; margin:0;"></p>
+         <p style="font-size:29px; color:#fff; width: 425px; margin:0 auto;font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 1px 0px #000000;">
+         <div class="download_text"><span id="this_title"></span></div></p><p style="font-size:20px; color:#fff; width: 425px; margin:0 auto;font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 1px 0px #000000;">
+         <div class="download_text"><b>Đăng Bởi :</b> [me] </div></p>
+        <div class="download_text">
+        <div class="download_link">
+        <a href="{URL}" target="_blank">Download <span>({TEXT} MB)</span></a></div></div>
+         <p><div class="download_text"><b>Chia Sẽ :</b> <span id="this_url"></span></div></p></div>
+
+
+</code>
+
+Css :
+<code>
+
+    /* ModChipDown
+    ---------------------------------------- */
+    .downbg {
+       width: 425px;
+       height: 323px;
+       position: relative;
+       background: #3a4146 url(http://cdn.mediafire.com/images/backgrounds/download/personalPromo/bg_personalPromo_blue.jpg);
+       border-radius: 12px;
+       -webkit-box-shadow: inset 0px 0px 70px 50px rgba(0, 0, 0, .4);
+       box-shadow: inset 0px 0px 70px 50px rgba(0, 0, 0, .4);
+       margin-bottom: 15px;
+       box-shadow: none;
+       text-align: center;
+       margin: 0;
+    }
+    .download_link {
+       font-size: 12px;
+       line-height: 44px;
+       text-align: center;
+       width: 375px;
+       z-index: 45;
+       margin: auto;
+    }
+
+    .download_link a span { font-weight:normal;}
+
+    .share_field {
+       background: #e4eff5;
+       font-size: 10px;
+       border-top: 1px solid #a6c1d0;
+       margin-top: 15px;
+       padding-bottom: 5px;
+       text-align: left;
+       padding: 8px;
+    }
+
+    .download_link a {
+       display: block;
+       padding: 12px 15px;
+       font: normal normal bold 16px/16px Arial, sans-serif;
+       -moz-border-radius: 4px;
+       -webkit-border-radius: 4px;
+       border-radius: 4px;
+       -moz-background-clip: padding;
+       -webkit-background-clip: padding-box;
+       background-clip: padding-box;
+       text-decoration: none;
+       color: white;
+       border: 1px solid #468000;
+       background-color: #83b842;
+       background-image: -webkit-gradient(linear, left top, left bottom, from(#83b842), to(#629721));
+       background-image: -webkit-linear-gradient(top, #83b842, #629721);
+       background-image: -moz-linear-gradient(top, #83b842, #629721);
+       background-image: -ms-linear-gradient(top, #83b842, #629721);
+       background-image: -o-linear-gradient(top, #83b842, #629721);
+       background-image: linear-gradient(top, #83b842, #629721);
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+       -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.5);
+       -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.5);
+       box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.5);
+       text-shadow: 0px -1px 0px #000;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -o-user-select: none;
+       user-select: none;
+
+    }
+
+    .download_text {
+       background:  #FFFFFF;
+       border-radius: 6px 6px 6px 6px;
+       padding: 8px;
+       width: 375px;
+       margin: auto;
+    }
+</code>
+
+
+Hướng dẫn cài đặt thông báo chung :
+
+    Byn.Pro đã viết:Hướng dẫn :
+
+    1 . Cái Code HideThank Bạn Dán Vào Thông Báo Cho Khách Chứ không phải thông báo chung cho thành viên nhé ^^
+http://img571.imageshack.us/img571/3521/setupow.png
+
+    2 . Cài đặt như hình để hiện thị cho khách
+http://imageshack.us/a/img571/3521/setupow.png
+
+<code>
+    <script type="text/javascript">
+    $(function(){$(".download_text #this_title").replaceWith('<strong>'+$('h3.first a').text()+'</strong>');});
+
+    $(document).ready(function () {
+       var url = $(location).attr('href');
+       $('.download_text #this_url').html('<strong>' + url + '</strong>');
+    });
+    </script>
+    <div class="downbg">
+         <p style="padding:15px 0; margin:0;"></p>
+         <p style="font-size:29px; color:#fff; width: 425px; margin:0 auto;font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 1px 0px #000000;">
+         <div class="download_text"><span id="this_title"></span></div></p><p style="font-size:20px; color:#fff; width: 425px; margin:0 auto;font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 1px 0px #000000;">
+         <div class="download_text"><b>Đăng Bởi :</b> [me] </div></p>
+        <div class="download_text">
+        <div class="download_link">
+        <a href="{URL}" target="_blank">Download <span>({TEXT})</span></a></div></div>
+         <p><div class="download_text"><b>Chia Sẽ :</b> <span id="this_url"></span></div></p></div>
+
+
+</code>
+Đó là code nhập thủ công bái sài như sau :
+
+<code>
+    [down=1GB]Link[/down]
+</code>
