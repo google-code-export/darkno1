@@ -69,7 +69,7 @@ Code Và Css :
 
 <code>
 
-    http://code-byn.googlecode.com/svn/thankhide.txt
+  <div class="thanks">{TEXT}</div>
 </code>
 
 <code>
@@ -109,7 +109,26 @@ Rồi Vào BBcode Tạo 1 Thẻ Bbcode mới :
 
 <code>
 
-    http://code-byn.googlecode.com/svn/thankhidebbcode.txt
+<!-- ThankHide - Byn.Pro -->
+
+
+<script type="text/javascript">
+$(function() {
+    if ($(".first").length) {
+      $(".panel").removeAttr('style');
+    }
+});
+$(function() {
+    $("a[href*='thanks']").each(function() {
+      if ($(this).length) {
+
+
+ $(this).parent().parent().parent().parent(".inner").children(".postbody").children(".content").children(".thanks").replaceWith('<div class="hidethank"><b>Nội dung đã bị ẩn. Bạn phải nhấn thanks để xem nội dung này</b></div>');
+      }
+    });
+});</script>
+
+
 </code>
 
 
