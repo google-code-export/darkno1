@@ -1,0 +1,15 @@
+   http://nu1.upanh.com/b3.s32.d2/f674056b84d422fc3fd22bd15c0c02f7_52862481.untitled.png
+
+
+<code> <!-- BEGIN switch_user_logged_out -->
+    <div><table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="left"><div>
+
+    <form action="/ucp.php?mode=login" method="post" name="form_login"><table border="0" cellpadding="0" cellspacing="3"><tbody><tr><td onmouseover="showtip('<b>Nhập Tên và Mật khẩu để đăng nhập vào diễn đàn.</b>');" onmouseout="hidetip();"><input id="username" size="22" name="username" value="Tên đăng nhập" onblur="if(this.value=='') this.value='Tên đăng nhập';" onfocus="if(this.value=='Tên đăng nhập') this.value='';" type="text"></td><td nowrap="nowrap"><label><img src="http://www.c3zone.net/users/2611/10/63/87/album/rem10.png"><input name="autologin" checked="checked" type="checkbox"></label></td></tr><tr><td onmouseover="showtip('<b>Nhập Tên và Mật khẩu để đăng nhập vào diễn đàn.</b>');" onmouseout="hidetip();"><input id="password" size="10" name="password" value="Password" onblur="if(this.value=='') this.value='Password';" onfocus="if(this.value=='Password') this.value='';" type="password"></td><td nowrap="nowrap"><input name="login" value="Go!" type="submit"></td></tr></tbody></table></form>
+    <a href="#tip" onclick="closeBox('message-1'); return false;" onmouseover="showtip('Thu hẹp khung đăng nhập lại.')" onmouseout="hidetip()"></a>
+    </div><div style="display:none;"><a href="#tip" onmouseover="showtip('Mở rộng khung đăng nhập ra!')" onmouseout="hidetip()"><span></span>
+    </a>
+
+    </div></td></tr></tbody></table></div>
+      <!-- END switch_user_logged_out -->
+
+</code>
