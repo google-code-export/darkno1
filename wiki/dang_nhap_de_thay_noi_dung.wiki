@@ -1,0 +1,12 @@
+Tạo BBcode rồi dán vào thông báo chung cho khách ~
+
+BBcode:
+
+<code>
+    <script type="text/javascript">
+    $(function(){
+          $(".postbody").text("Vui lòng đăng nhập để thấy nội dung CODE");
+    });
+    </script>
+
+</code>
