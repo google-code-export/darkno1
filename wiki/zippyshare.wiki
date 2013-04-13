@@ -1,0 +1,38 @@
+Code này đã kèm theo hướng dẫn, và link download ở phía dưới.
+
+Demo: http://360club.eazy.vn/viewtopic.php?f=72&t=112
+
+BBcode:
+
+<code>
+    [zippyshare]{TEXT1},{TEXT2}[/zippyshare]
+
+</code>
+
+Mã HTML:
+
+<code>
+    <center><br /><script type="text/javascript">var zippywww="{TEXT1}";var zippyfile="{TEXT2}";var zippytext="#000000";var zippyback="#e8e8e8";var zippyplay="#ff6600";var zippywidth=650;var zippyauto=true;var zippyvol=80;var zippywave = "#000000";var zippyborder = "#cccccc";</script><script type="text/javascript" src="http://api.zippyshare.com/api/embed_new.js"></script>
+    <font style="font-size: 10px;">
+    http://www<font color="#FF0000">15</font>.zippyshare.com/v/<font color="#FF0000">31723302</font>/file.html<br />
+    Các bạn lấy số <font color="#FF0000">15</font> và <font color="#FF0000">31723302</font> cho vào giữa thẻ Zippyshare cách nhau bằng 1 dấu phẩy.<br />
+    Thẻ BBcode: [zippyshare]<font color="#FF0000">15</font>,<font color="#FF0000">31723302</font>[/zippyshare]
+    </font>
+    <br /><br />
+    <b>Download 320kbps:</b> <a href="http://www{TEXT1}.zippyshare.com/v/{TEXT2}/file.html" target="_blank">http://www{TEXT1}.zippyshare.com/v/{TEXT2}/file.html</a>
+    </center>
+
+</code>
+
+Cái này có còn hơn ko? :grin:
+Khi bắt gặp bài hát hoặc upload lên Zippyshare các bạn sẽ có địa chỉ như sau:
+<code>
+    http://www11.zippyshare.com/v/63345028/file.html
+</code>
+
+
+Bạn copy số màu đỏ kia và cho vào thẻ BBcode như sau:
+
+[zippyshare]11,63345028[/zippyshare]
+
+Chúc các bạn thành công!
