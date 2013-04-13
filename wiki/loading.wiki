@@ -1,0 +1,17 @@
+ http://i41.servimg.com/u/f41/17/61/77/59/pictur12.png
+
+ <code>
+
+  <style type="text/css">
+    /* Load ding */
+    #loadlig{background:#000;background-color:rgba(0,0,0,0.5);color:#fff;filter:Alpha(opacity=80);float:left;font-size:22px;height:100%;left:0;position:fixed;text-align:center;text-shadow:0 1px 0 #000;top:0;width:100%;z-index:999}.load1{background:#333;border:5px solid rgba(255,255,255,0.1);border-radius:12px;height:50px;margin:150px auto;width:50px}
+
+    </style>
+
+    <div id=loadlig><div class=load1><img src=http://www.thismanslife.co.uk/images/loading.gif style='margin-top: 17px;'></div>Loading...</div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){$(window).load(function(){$('#loadlig').fadeOut(2000,function(){$(this).remove})})});
+    </script>
+
+</code>
