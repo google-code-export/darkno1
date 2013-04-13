@@ -1,0 +1,42 @@
+http://nu5.upanh.com/b3.s35.d2/e0259b7d41c7152357e3098c76dfe7c7_52985875.demo.png
+
+Tạo BBcode và dán cái này vào thông báo chung.
+
+BBcode
+
+<code>
+    <script type="text/javascript"> $(function() {
+        $("li.row dd.lastpost").each(function() {
+          var $ckipavatar = $(this).find("a[href*='viewtopic.php']").attr('href');
+          $(this).before('<dd class="ckiplastavatar"><a href="javascript:void(0);"><img src="http://cdn1.iconfinder.com/data/icons/basicset/user_64.png"/></a></dd>');
+          $(this).prev("dd").load('' + $ckipavatar + ' .eazy-avatar a:last')
+        });
+    });</script>
+
+
+</code>
+
+Vào Giao diện > Kiểu dáng:
+
+Thêm CSS:
+
+<code>
+    .ckiplastavatar img{
+       max-height:40px;
+       max-width:40px;
+       border-radius: 3px;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+       display: block;
+    }
+
+    .ckiplastavatar {
+       border: 1px solid #D7D7D7 !important;
+       padding: 2px !important;
+       border-radius: 3px;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+        margin-left: -15px;
+    }
+
+</code>
