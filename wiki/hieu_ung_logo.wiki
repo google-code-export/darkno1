@@ -1,0 +1,25 @@
+Vào Kiểu dáng > Giao diện > Chỉnh sửa giao diện
+
+<code>
+    #logo {
+       float: left;
+       width: 430px;
+       height: 134px;
+       position: absolute;
+       top: 50px;
+       display: block;
+       background: url('http://www.megapic.vn/images/52024807799784033903.png') no-repeat ;
+       margin-left: -13px;
+        margin-top: -22px;
+    -moz-transition-duration: 1.5s;
+    -webkit-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    }
+
+    #logo:hover {
+    opacity: 0.5;
+       text-decoration: none;
+    margin-left:100px;
+    }
+</code>
+Jakub Lombard (http://360club.eazy.vn)
