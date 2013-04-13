@@ -1,0 +1,15 @@
+http://img707.imageshack.us/img707/3858/nhchpmnhnh2013012018161.png
+
+Code :
+
+
+<code><script type="text/javascript">$(function(){$('<div class="eazy-widget"><div class="eazy-widget-header">TenSideBar</div><div class="eazy-widget-body"><center>{Ma_HTML}</center></div></div>').insertAfter(".eazy-widget:eq(0)");});</script>
+</code>
+
+
+
+{MA_HTML} - Thay vào bằng HTML của mình nhé !
+
+Code mình cho vào google để share đỡ trong thời gian bị lỗi ^^
+
+Các bạn coppy code trên rồi tạo bbcode dán vào thông báo chung nhé ^^
