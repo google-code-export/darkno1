@@ -1,0 +1,43 @@
+Code Hide / Show nội dung Ver1
+
+Bản Quyền : ChipTeam - Byn.Pro ( ChipTeam.EaZy.Vn )
+
+Demo : [ Đang UpdaTe]
+
+Bbcode :
+
+<code>
+    [sp={TEXT}]{TEXT1}[/sp]
+</code>
+
+<code>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#sptd").click(function(){
+        $("#spnd").slideToggle(500);
+      });
+      });
+    </script>
+    <div id="sptd">{TEXT} [Click Vào]</div>
+    <div id="spnd">{TEXT1}</div>
+</code>
+
+
+Css :
+
+<code>
+    #spnd,#sptd
+    {
+    padding:5px;
+    text-align:left;
+    background-color:#e5eecc;
+    border:solid 1px #c3c3c3;
+    }
+    #spnd
+    {
+    padding:10px;
+    display:none;
+    border-top: none;
+    }
+
+</code>
