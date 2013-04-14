@@ -1,0 +1,76 @@
+
+Ver 1 :
+
+    Mình Đi Dạo Vài Forum Thấy Code Này Cũng Khá Nhiều Người Dùng Nên Mình Viết Tạm Sang jQuery Vì jQuery Ngắn Gọn Nhẹ Hơn Javadcript Rất Nhiều
+
+    Tạo 1 Thẻ BBcode Với Mã HTML Là :
+<code>
+        <script type="text/javascript">$(document).ready(function(){$(document).bind("contextmenu",function(){alert('Không Được Click Chuột Phải');return false;});});</script>
+
+</code>
+
+    Lưu ý Eazy Đã Add Thư Viện jQuery Vào Forum Nên Các Bạn Chỉ Cần Chèn Code Trên Là Chạy Được
+
+    P/s : Tùy Biến Thế Nào Là Tùy Mọi Người Nhé !
+
+    Note Thêm : Mong Các "PRO" Không Dìm Hàng Là Mình Mừng Lắm Rồi Không Cần Tks Đâu
+
+    Update Cách Của A Dothinh
+
+        dothinh1105 đã viết:Thích không cho bôi đen thì đây
+
+<code>
+            <script type="text/javascript">$(function(){$(".content").mousedown(function(){return false})});</script>
+
+</code>
+        Thích alert thì thêm vào.
+
+        Sửa lại 1 tí cho SONGOKU nhé, chỉ cần ko click dc chuột phải ở bài viết để ko bị copy thôi.
+
+<code>
+            <script type="text/javascript">$(function(){$(".content").contextmenu(function(){return false});});</script>
+
+</code>
+        Thế này thôi là đủ ko click phải dc rồi, còn thích alert thì thêm vào.
+
+
+
+
+    Viết bởi SONGOKU - Jokerteam
+
+
+
+Code Dành Cho Chống Coppy 1 Phần Bài Viết
+
+Cách Làm :
+Cách sử dụng thẻ BBCode :
+<code>
+[coppytext]{TEXT}[/coppytext]
+</code>
+Mã HTML thay thế :
+
+<code>
+    <div>{TEXT}</div>
+    <script type="text/javascript">$(function(){$(".coppytext").parent().mousedown(function(){return false;}).contextmenu(function(){return false;});});</script>
+
+</code>
+
+Code Dành Cho Chống Coppy Cả Forum
+
+Cách Làm :
+Cách sử dụng thẻ BBCode :
+<code>
+[coppy-all][/coppy-all]
+</code>
+Mã HTML thay thế :
+
+<code>
+    <script type="text/javascript">$(function(){$(document).mousedown(function(){return false;}).contextmenu(function(){return false;});});</script>
+
+</code>
+
+Update Log :
+
+Ver 1.1
+
+    Bỏ Alert Để Trình Duyệt Không Chặn Script
