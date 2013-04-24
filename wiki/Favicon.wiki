@@ -1,0 +1,1 @@
+<code>    <script type="text/javascript">$(function(){$('head').append('<link rel="Shortcut Icon" href="http://mp3.zing.vn/favicon.ico" type="image/x-icon" />');});</script></code>
