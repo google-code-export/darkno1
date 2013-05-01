@@ -1,0 +1,1 @@
+$(function(){$(".post-entry img").each(function(){if(!/illiweb|smiles/i.test($(this).attr("src"))&&$(this).width()>30){$(this).wrap('<center></center>')}if(!/illiweb|smiles/i.test($(this).attr("src"))&&$(this).height()>100&&$(this).width()>100){if($(this).attr("class")!="fcim"){$(this).addClass('west')}}})})
