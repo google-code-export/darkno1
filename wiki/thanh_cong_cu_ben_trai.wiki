@@ -1,3 +1,4 @@
+http://i.imgur.com/L6dz1.png
 <code><script type="text/javascript">$(document).ready(function(){
   /* This code is executed after the DOM has been completely loaded */
  
