@@ -86,3 +86,249 @@ http://i79.servimg.com/u/f79/17/61/77/59/anh_ch12.png
 
 <script type="text/javascript">eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(4(g){m 14=K.2a(\'27\');6(!14)t;m 22=\'Ă‚Â©1Z 1X 1W - 1V.1U - 1T 1S 1q.\';m 17=$(14).B("1Q").1O(/[0-9]+/);$(\'1N a[1M^="/1K"]\').B(\'I-1H\',\'\'+17+\'\')});(4(c){4 a(d){6(d.B("o")||H(d.B("12-o"))!="11"){d.B("12-o",d.B("o")||"").1D("o")}}4 b(e,d){3.$u=c(e);3.7=d;3.F=x;a(3.$u)}b.1C={13:4(){m g=3.1m();6(g&&3.F){m f=3.z();f.1B(".5-1a")[3.7.N?"N":"1y"](g);f[0].1w="5";f.Z().M({r:0,p:0,V:"1v",1n:"1o"}).1u(K.1t);m j=c.U({},3.$u.y(),{C:3.$u[0].1b,J:3.$u[0].1i});m d=f[0].1b,i=f[0].1i;m h=(H 3.7.q=="4")?3.7.q.1h(3.$u[0]):3.7.q;m e;1r(h.1j(0)){S"n":e={r:j.r+j.J+3.7.y,p:j.p+j.C/2-d/2};P;S"s":e={r:j.r-i-3.7.y,p:j.p+j.C/2-d/2};P;S"e":e={r:j.r+j.J/2-i/2,p:j.p-d-3.7.y};P;S"w":e={r:j.r+j.J/2-i/2,p:j.p+j.C+3.7.y};P}6(h.1R==2){6(h.1j(1)=="w"){e.p=j.p+j.C/2-15}D{e.p=j.p+j.C/2-d+15}}f.M(e).1s("5-"+h);6(3.7.v){f.1p().M({G:0,1n:"1o",V:"1e"}).1x({G:3.7.G})}D{f.M({V:"1e",G:3.7.G})}}},T:4(){6(3.7.v){3.z().1p().1z(4(){c(3).Z()})}D{3.z().Z()}},1m:4(){m f,d=3.$u,e=3.7;a(d);m f,e=3.7;6(H e.o=="11"){f=d.B(e.o=="o"?"12-o":e.o)}D{6(H e.o=="4"){f=e.o.1h(d[0])}}f=(""+f).1A(/(^\\s*|\\s*$)/,"");t f||e.18},z:4(){6(!3.$z){3.$z=c(\'<E Y="5"></E>\').N(\'<E Y="5-1E"></E><E Y="5-1a"/></E>\')}t 3.$z},1F:4(){6(!3.$u[0].1G){3.T();3.$u=1c;3.7=1c}},1I:4(){3.F=x},1J:4(){3.F=L},1L:4(){3.F=!3.F}};c.A.5=4(h){6(h===x){t 3.I("5")}D{6(H h=="11"){t 3.I("5")[h]()}}h=c.U({},c.A.5.1k,h);4 g(k){m l=c.I(k,"5");6(!l){l=1P b(k,c.A.5.1d(k,h));c.I(k,"5",l)}t l}4 j(){m k=g(3);k.O="1l";6(h.W==0){k.13()}D{1g(4(){6(k.O=="1l"){k.13()}},h.W)}}4 f(){m k=g(3);k.O="1f";6(h.X==0){k.T()}D{1g(4(){6(k.O=="1f"){k.T()}},h.X)}}6(!h.Q){3.1Y(4(){g(3)})}6(h.R!="20"){m d=h.Q?"Q":"21",i=h.R=="10"?"23":"24",e=h.R=="10"?"25":"26";3[d](i,j)[d](e,f)}t 3};c.A.5.1k={W:0,X:0,v:L,18:"",q:"n",N:L,Q:L,y:0,G:0.8,o:"o",R:"10"};c.A.5.1d=4(e,d){t c.19?c.U({},d,c(e).19()):d};c.A.5.28=4(){t c(3).y().r>(c(K).29()+c(16).J()/2)?"s":"n"};c.A.5.2b=4(){t c(3).y().p>(c(K).2c()+c(16).C()/2)?"e":"w"}})(2d);$(K).2e(4(){$(4(){$("a").5({v:x,q:"n"});$("E").5({v:x,q:"s"});$("2f").5({v:x,q:"s"});$("2g").5({v:x,q:"s"});$("2h").5({v:x,q:"s"});$("2i").5({v:x,q:"s"})})});',62,143,'|||this|function|tipsy|if|options|||||||||||||||var||title|left|gravity|top||return|element|fade||true|offset|tip|fn|attr|width|else|div|enabled|opacity|typeof|data|height|document|false|css|html|hoverState|break|live|trigger|case|hide|extend|visibility|delayIn|delayOut|class|remove|hover|string|original|show|tg||window|mps|fallback|metadata|inner|offsetWidth|null|elementOptions|visible|out|setTimeout|call|offsetHeight|charAt|defaults|in|getTitle|display|block|stop|Reserved|switch|addClass|body|appendTo|hidden|className|animate|text|fadeOut|replace|find|prototype|removeAttr|arrow|validate|parentNode|counter|enable|disable|privmsg|toggleEnabled|href|li|match|new|alt|length|Rights|All|com|toxigeek|giObanii|by|each|Copyright|manual|bind|Copyrights|mouseenter|focus|mouseleave|blur|i_icon_mini_new_message|autoNS|scrollTop|getElementById|autoWE|scrollLeft|jQuery|ready|span|img|button|input'.split('|'),0,{}))
  </script></code>
+
+<code>    <script type="text/javascript">$(function (g) {
+        var tg = document.getElementById('i_icon_mini_new_message');
+        if (!tg) return;
+        var Copyrights = 'Ă‚Â©Copyright by giObanii - toxigeek.com - All Rights Reserved.';
+        var mps = $(tg).attr("alt").match(/[0-9]+/);
+        $('li a[href^="/privmsg"]').attr('data-counter', '' + mps + '')
+    });
+    (function (c) {
+        function a(d) {
+            if (d.attr("title") || typeof (d.attr("original-title")) != "string") {
+                d.attr("original-title", d.attr("title") || "").removeAttr("title")
+            }
+        }
+        function b(e, d) {
+            this.$element = c(e);
+            this.options = d;
+            this.enabled = true;
+            a(this.$element)
+        }
+        b.prototype = {
+            show: function () {
+                var g = this.getTitle();
+                if (g && this.enabled) {
+                    var f = this.tip();
+                    f.find(".tipsy-inner")[this.options.html ? "html" : "text"](g);
+                    f[0].className = "tipsy";
+                    f.remove().css({
+                        top: 0,
+                        left: 0,
+                        visibility: "hidden",
+                        display: "block"
+                    }).appendTo(document.body);
+                    var j = c.extend({}, this.$element.offset(), {
+                        width: this.$element[0].offsetWidth,
+                        height: this.$element[0].offsetHeight
+                    });
+                    var d = f[0].offsetWidth,
+                        i = f[0].offsetHeight;
+                    var h = (typeof this.options.gravity == "function") ? this.options.gravity.call(this.$element[0]) : this.options.gravity;
+                    var e;
+                    switch (h.charAt(0)) {
+                    case "n":
+                        e = {
+                            top: j.top + j.height + this.options.offset,
+                            left: j.left + j.width / 2 - d / 2
+                        };
+                        break;
+                    case "s":
+                        e = {
+                            top: j.top - i - this.options.offset,
+                            left: j.left + j.width / 2 - d / 2
+                        };
+                        break;
+                    case "e":
+                        e = {
+                            top: j.top + j.height / 2 - i / 2,
+                            left: j.left - d - this.options.offset
+                        };
+                        break;
+                    case "w":
+                        e = {
+                            top: j.top + j.height / 2 - i / 2,
+                            left: j.left + j.width + this.options.offset
+                        };
+                        break
+                    }
+                    if (h.length == 2) {
+                        if (h.charAt(1) == "w") {
+                            e.left = j.left + j.width / 2 - 15
+                        } else {
+                            e.left = j.left + j.width / 2 - d + 15
+                        }
+                    }
+                    f.css(e).addClass("tipsy-" + h);
+                    if (this.options.fade) {
+                        f.stop().css({
+                            opacity: 0,
+                            display: "block",
+                            visibility: "visible"
+                        }).animate({
+                            opacity: this.options.opacity
+                        })
+                    } else {
+                        f.css({
+                            visibility: "visible",
+                            opacity: this.options.opacity
+                        })
+                    }
+                }
+            },
+            hide: function () {
+                if (this.options.fade) {
+                    this.tip().stop().fadeOut(function () {
+                        c(this).remove()
+                    })
+                } else {
+                    this.tip().remove()
+                }
+            },
+            getTitle: function () {
+                var f, d = this.$element,
+                    e = this.options;
+                a(d);
+                var f, e = this.options;
+                if (typeof e.title == "string") {
+                    f = d.attr(e.title == "title" ? "original-title" : e.title)
+                } else {
+                    if (typeof e.title == "function") {
+                        f = e.title.call(d[0])
+                    }
+                }
+                f = ("" + f).replace(/(^\s*|\s*$)/, "");
+                return f || e.fallback
+            },
+            tip: function () {
+                if (!this.$tip) {
+                    this.$tip = c('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner"/></div>')
+                }
+                return this.$tip
+            },
+            validate: function () {
+                if (!this.$element[0].parentNode) {
+                    this.hide();
+                    this.$element = null;
+                    this.options = null
+                }
+            },
+            enable: function () {
+                this.enabled = true
+            },
+            disable: function () {
+                this.enabled = false
+            },
+            toggleEnabled: function () {
+                this.enabled = !this.enabled
+            }
+        };
+        c.fn.tipsy = function (h) {
+            if (h === true) {
+                return this.data("tipsy")
+            } else {
+                if (typeof h == "string") {
+                    return this.data("tipsy")[h]()
+                }
+            }
+            h = c.extend({}, c.fn.tipsy.defaults, h);
+
+            function g(k) {
+                var l = c.data(k, "tipsy");
+                if (!l) {
+                    l = new b(k, c.fn.tipsy.elementOptions(k, h));
+                    c.data(k, "tipsy", l)
+                }
+                return l
+            }
+            function j() {
+                var k = g(this);
+                k.hoverState = "in";
+                if (h.delayIn == 0) {
+                    k.show()
+                } else {
+                    setTimeout(function () {
+                        if (k.hoverState == "in") {
+                            k.show()
+                        }
+                    }, h.delayIn)
+                }
+            }
+            function f() {
+                var k = g(this);
+                k.hoverState = "out";
+                if (h.delayOut == 0) {
+                    k.hide()
+                } else {
+                    setTimeout(function () {
+                        if (k.hoverState == "out") {
+                            k.hide()
+                        }
+                    }, h.delayOut)
+                }
+            }
+            if (!h.live) {
+                this.each(function () {
+                    g(this)
+                })
+            }
+            if (h.trigger != "manual") {
+                var d = h.live ? "live" : "bind",
+                    i = h.trigger == "hover" ? "mouseenter" : "focus",
+                    e = h.trigger == "hover" ? "mouseleave" : "blur";
+                this[d](i, j)[d](e, f)
+            }
+            return this
+        };
+        c.fn.tipsy.defaults = {
+            delayIn: 0,
+            delayOut: 0,
+            fade: false,
+            fallback: "",
+            gravity: "n",
+            html: false,
+            live: false,
+            offset: 0,
+            opacity: 0.8,
+            title: "title",
+            trigger: "hover"
+        };
+        c.fn.tipsy.elementOptions = function (e, d) {
+            return c.metadata ? c.extend({}, d, c(e).metadata()) : d
+        };
+        c.fn.tipsy.autoNS = function () {
+            return c(this).offset().top > (c(document).scrollTop() + c(window).height() / 2) ? "s" : "n"
+        };
+        c.fn.tipsy.autoWE = function () {
+            return c(this).offset().left > (c(document).scrollLeft() + c(window).width() / 2) ? "e" : "w"
+        }
+    })(jQuery);
+    $(document).ready(function () {
+        $(function () {
+            $("a").tipsy({
+                fade: true,
+                gravity: "n"
+            });
+            $("div").tipsy({
+                fade: true,
+                gravity: "s"
+            });
+            $("span").tipsy({
+                fade: true,
+                gravity: "s"
+            });
+            $("img").tipsy({
+                fade: true,
+                gravity: "s"
+            });
+            $("button").tipsy({
+                fade: true,
+                gravity: "s"
+            });
+            $("input").tipsy({
+                fade: true,
+                gravity: "s"
+            })
+        })
+    });</script></code>
