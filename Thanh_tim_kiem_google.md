@@ -1,0 +1,118 @@
+[TUT](TUT.md)Thanh Tìm Kiếm Google Ver 2.0
+
+Ver 1 :
+
+> dothinh1105 đã viết:demo: http://12b6.eazy.vn
+
+> Đầu tiên truy cập vào trang: http://www.google.com/cse/manage/create (Phải đăng nhập tài khoản google)
+
+> Ở phần tên và mô tả, điền gì cũng dc, cứ theo hướng dẫn mà điền. Phần URL thì điền đầy đủ URL forum bạn vào, ví dụ:
+```
+
+http://12b6.eazy.vn
+```
+
+> Sau đó tick vào ô Tôi đã đọc.... và bấm Tiếp. Chọn skin rồi tiếp tục bấm Tiếp để lấy code.
+
+> Vào ACP -> Gửi bài -> Tùy biến thẻ bbcode -> Tạo BBcode mới và chèn vào:
+
+```
+
+<script>(function() {var cx = '018442773577091113713:f0v0fiua804';var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);})();
+
+
+Unknown end tag for &lt;/script&gt;
+
+<script>$(function(){$(".announcement").after('<gcse:search>
+
+Unknown end tag for &lt;/search&gt;
+
+');});
+
+Unknown end tag for &lt;/script&gt;
+
+
+
+```
+> Thay phần màu đỏ trong code của bạn vào trong code trên là xong. Thanh tìm kiếm sẽ hiện dưới thông báo chung.
+
+> Lưu ý: Chỉ có tác dụng với Eazy Style.
+
+> Viết bởi dothinh - Joker team
+
+
+
+Ver 2
+
+Đây Là 1 Thủ Thuật Nho Nhỏ Giúp Các Bạn Tạo Ra 1 Thanh Tìm Kiếm Cho Forum Đặt Ngay Tại Vị Trí Như Support Forum ( Ở Ver 1 ) Và Khi Kéo Thanh Scroll Xuống Thanh Google Sẽ Đi Theo
+
+Cách Làm :
+Các Tạo 1 Thanh Tìm Kiếm :
+
+http://support.eazy.vn/viewtopic.php?f=68&t=16781
+
+Được 1 Đống Code Tìm :
+
+Mã: Chọn tất cả```
+
+var cx = '~~~~~~';
+```
+
+
+Lấy Cái ~~Trong Code Vừa Nhận Được Tương Ứng~~
+
+VD : 010482194972269424202:j5std9ugvm0
+
+Thay Vào :
+
+010482194972269424202:j5std9ugvm0
+
+Trong Code :
+
+```
+
+<script type="text/javascript">
+//google di chuyển
+$(function(){var truot = $("#google"), offset = truot.offset();$(window).scroll(function(){if ($(this).scrollTop() > offset.top) {truot.addClass('fixmenu');truot.removeClass('displayson');}else if($(this).scrollTop() <= offset.top && truot.hasClass('fixmenu')){ truot.removeClass('fixmenu');truot.addClass('displayson');}});});
+
+//Google Search
+(function() {var cx = '010482194972269424202:j5std9ugvm0';var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);})();
+
+//Google Hiển Thị Tại Thông Báo Chung
+$(function(){$(".announcement").after('<gcse:search>
+
+Unknown end tag for &lt;/search&gt;
+
+');});
+
+
+Unknown end tag for &lt;/script&gt;
+
+<div id="google"><gcse:search>
+
+Unknown end tag for &lt;/search&gt;
+
+
+
+Unknown end tag for &lt;/div&gt;
+
+
+
+
+```
+Tạo BBCode Cho Code Trên Vào
+
+Add Css Vào Kiểu Dáng :
+
+```
+
+.fixmenu{position:fixed;top:5px;left:100px;width:85%;}
+.displayson{display:none;}
+
+```
+
+Demo : http://toan.eazy.vn ( Hiện Mình Đang Làm Ver 3.0 Nên Đôi Demo Không Còn Tác Dụng )
+
+Update Log
+
+> Thanh Google Chạy

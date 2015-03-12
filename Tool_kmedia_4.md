@@ -1,0 +1,224 @@
+Demo : http://toan.eazy.vn/viewtopic.php?f=100&t=19
+
+Các trang hỗ trợ:
+
+> mp3.zing.vn
+> nhaccuatui.com
+> nhacso.net
+> nhac.vui.vn
+> youtube
+> star.zing.vn
+> clip.vn
+> music.go.vn
+> nhacvn.net
+> nhincuoi.com
+> vimeo.com
+> dailymotion.com
+> và tất cả các link có đuôi swf
+
+
+
+**Cách làm: Tạo BBcode mới với HTML thay thế:**
+
+```
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript">
+
+Unknown end tag for &lt;/script&gt;
+
+<script src="http://12b6.forum-viet.com/h15-page" type="text/javascript">
+
+Unknown end tag for &lt;/script&gt;
+
+
+
+```
+
+**Nếu ai ko thích sử dụng chung thì đây là code cho các bạn:
+Spoiler:**
+
+```
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js" type="text/javascript">
+
+Unknown end tag for &lt;/script&gt;
+
+<script>function getNhacvnID(b){a=b.split("/");a.pop();return a.pop().split("-").pop()}function getZingID(b){return b.split("/").pop().split(".")[0]}function getGoID(b){return b.split("/").pop().split(".")[0]}function getNhacsoID(b){a=b.split(".");a.pop();return a.pop()}function getClipID(b){return b.split(",").pop().split("?")[0]}function getStarID(b){a=b.split(".");a.pop();return a.pop()}function getNhacvuiID(b){return b.split("/").pop()}function getWidth(b){a = b.split("width").pop();return a.slice(1, 4);}function getHeight(b){a = b.split("height").pop();return a.slice(1, 4);}function getNCTmvID(b){a=b.split("/").pop().split(".")[1];return a;}function getDailyID(b){a=b.split("/").pop().split("_")[0];return a;}
+
+$(function(){$("a[href='http://www.dailymotion.com/video/']").each(function(){if ($("a[href*='width'], a[href*='height']").length) {$(this).replaceWith('<center><iframe frameborder="0" width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'" src="http://www.dailymotion.com/embed/video/'+getDailyID($(this).attr('href'))+'?theme=pink_paradise&foreground=%23E02C72&highlight=%23BF4B78&background=%23260F18"></iframe></center>');} else {$(this).replaceWith('<center><iframe frameborder="0" width="480" height="324" src="http://www.dailymotion.com/embed/video/'+getDailyID($(this).attr('href'))+'?theme=pink_paradise&foreground=%23E02C72&highlight=%23BF4B78&background=%23260F18"></iframe></center>');}});$("a[href*='http://www.nhaccuatui.com/mv/']").each(function(){if ($("a[href*='width'], a[href*='height']").length) {$(this).replaceWith('<center><embed src="http://www.nhaccuatui.com/mv/xem-clip/'+getNCTmvID($(this).attr("href"))+'" flashvars="target=blank&autostart=false" allowscriptaccess="always" quality="high" wmode="transparent" type="application/x-shockwave-flash" width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'"></embed></center>');}else {$(this).replaceWith('<center><embed src="http://www.nhaccuatui.com/mv/xem-clip/'+getNCTmvID($(this).attr("href"))+'" flashvars="target=blank&autostart=false" allowscriptaccess="always" quality="high" wmode="transparent" type="application/x-shockwave-flash" width="640" height="385"></embed></center>');}});$("a[href='http://www.nhaccuatui.com/nghe?L=']").each(function(){$(this).replaceWith('<center><embed src="http://www.nhaccuatui.com/l/'+$(this).attr('href').slice(33)+'" flashvars="target=blank&autostart=false" allowscriptaccess="always" quality="high" wmode="transparent" type="application/x-shockwave-flash" width="300" height="400">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+');});$("a[href='http://youtu.be/']").each(function () {var link = $(this).attr('href');if($("a[href*='width'], a[href*='height']").length){$(this).replaceWith('<center><embed pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://www.youtube.com/v/' + link.slice(16) + '" width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'" type="application/x-shockwave-flash" wmode="transparent" quality="high" scale="exactfit"></embed><br/><img src="http://img.youtube.com/vi/' + link.slice(16, 27) + '/1.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(16, 27) + '/2.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(16, 27) + '/3.jpg"/></center>');}else {$(this).replaceWith('<center><embed pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://youtube.com/v/' + link.slice(16) + '" width="425" height="350" type="application/x-shockwave-flash" wmode="transparent" quality="high" scale="exactfit"></embed><br/><img src="http://img.youtube.com/vi/' + link.slice(16) + '/1.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(16) + '/2.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(16) + '/3.jpg"/></center>');}});$("a[href='http://vimeo.com/']").each(function(){if ($("a[href*='width'], a[href*='height']").length) {var b=$(this).attr("href").split("&")[0].split("/").pop();$(this).replaceWith('<center><iframe src="http://player.vimeo.com/video/'+b+'" width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+
+Unknown end tag for &lt;/iframe&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+');}else {var b=$(this).attr("href").split("/").pop();$(this).replaceWith('<center><iframe src="http://player.vimeo.com/video/'+b+'" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+
+Unknown end tag for &lt;/iframe&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+');}});$("a[href*='.swf'],a[href*='doc.php']").each(function(){var c=$(this).attr("href").split("&")[0];if($("a[href*='width'], a[href*='height']").length){$(this).replaceWith('<center><EMBED src="'+
+c+'" WIDTH="'+ getWidth($(this).attr("href")) +'" bgcolor="#000000" HEIGHT="'+ getHeight($(this).attr("href")) +'" MENU="false" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+
+Unknown end tag for &lt;/EMBED&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+');}else{$(this).replaceWith('<center><EMBED src="'+
+c+'" WIDTH="425" bgcolor="#000000" HEIGHT="350" MENU="false" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+
+Unknown end tag for &lt;/EMBED&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+');}});$("a[href='http://clip.vn/watch/']").each(function(){if($("a[href*='width'], a[href*='height']").length){$(this).replaceWith('<center><iframe width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'" src="http://clip.vn/embed/'+getClipID($(this).attr("href"))+'" frameborder="0" allowfullscreen></iframe><center>');}else{$(this).replaceWith('<center><iframe width="640" height="389" src="http://clip.vn/embed/'+getClipID($(this).attr("href"))+'" frameborder="0" allowfullscreen></iframe><center>');}});$(".content a[href='http://www.youtube.com/watch?v=']").each(function () {var link = $(this).attr('href').replace('watch?v=', 'v/');if($("a[href*='width'], a[href*='height']").length){$(this).replaceWith('<center><embed pluginspage="http://www.macromedia.com/go/getflashplayer" src="' + link + '" width="'+ getWidth($(this).attr("href")) +'" height="'+ getHeight($(this).attr("href")) +'" type="application/x-shockwave-flash" wmode="transparent" quality="high" scale="exactfit">
+
+Unknown end tag for &lt;/embed&gt;
+
+<br/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/1.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/2.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/3.jpg"/>
+
+Unknown end tag for &lt;/center&gt;
+
+');}else {$(this).replaceWith('<center><embed pluginspage="http://www.macromedia.com/go/getflashplayer" src="' + link + '" width="425" height="350" type="application/x-shockwave-flash" wmode="transparent" quality="high" scale="exactfit">
+
+Unknown end tag for &lt;/embed&gt;
+
+<br/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/1.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/2.jpg"/><img src="http://img.youtube.com/vi/' + link.slice(25,36) + '/3.jpg"/>
+
+Unknown end tag for &lt;/center&gt;
+
+');}});$("a[href^='http://www.nhincuoi.com/']").each(function(){var b=$(this).attr("href");$(this).replaceWith('<center><embed src="http://www.nhincuoi.com/html/flash/player.swf?file='+b+'/export&controlbar=over&stretching=exactfit&backcolor=0x000000&frontcolor=0xCCCCCC&lightcolor=0x557722&autostart=false&skin=http://www.nhincuoi.com/html/flash/skin.swf&shuffle=false&repeat=list&image=http://www.nhincuoi.com/hinh/2012/09/09/_2012090903231215MPj.thumb.jpg&logo=http://www.nhincuoi.com/html/images/client/vlogo.png&enablejs=true" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="400" height="300" quality="High" scale="NoBorder" wmode="transparent">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+')});
+$("a[href='http://www.nhacvn.net/nghe-bai-hat-']").replaceWith(function(){return"<center><embed width='436' height='300' flashvars='file=http://www.nhacvn.net/"+getNhacvnID($(this).attr("href"))+".xml&skin=http://www.nhacvn.net/player/stylish.swf&autostart=false&repeat=always' wmode='opaque' allowscriptaccess='always' allowfullscreen='true' quality='high' name='mpl' id='mpl' src='http://www.nhacvn.net/player/player.swf' type='application/x-shockwave-flash'></center>"});$("a[href='http://www.nhaccuatui.com/nghe?M=']").each(function(){$(this).replaceWith('<center><embed src="http://www.nhaccuatui.com/m/'+$(this).attr("href").slice(33)+'" quality="high" wmode="transparent" type="application/x-shockwave-flash" flashvars="&autostart=false" width="300" height="300">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+')});$("a[href^='http://mp3.zing.vn/bai-hat/']").replaceWith(function(){return'<center><embed height="80" quality="high" src="http://static.mp3.zdn.vn/skins/mp3_main/flash/zing_mp3_player_v2.7_test.swf?xmlURL=http://mp3.zing.vn/play/?pid='+
+getZingID($(this).attr("href"))+'||4&amp;songID=0&amp;_mp3=&amp;autoplay=false&amp;wmode=transparent" type="application/x-shockwave-flash" width="430" wmode="transparent">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+'});$("a[href^='http://music.go.vn/ca-khuc/']").replaceWith(function(){return'<center><embed height="180" quality="high" src="http://music.go.vn/Players/V2/Playlist/Embed/app.swf?dataURL=http://music.go.vn/Ajax/RenderXmlHandler.ashx?sid='+getGoID($(this).attr("href"))+'&assetURL=http://music.go.vn/Players/V2/Playlist/Embed/defaultSkin.swf&playingMode=http&autoPlay=false" width="430" wmode="transparent">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+'});
+$("a[href^='http://nhacso.net/nghe-nhac/']").replaceWith(function(){return'<center><embed width="400" height="60" src="http://st.nhacso.net/flash/v57/embedPlaylistjs.swf?xmlPath=http://nhacso.net/flash/song/xnl/1/id/'+
+getNhacsoID($(this).attr("href"))+'&adsLink=&colorAux=0x0099ff&colorBorder=0x666666&typePlayer=single&autoPlay=false" quality="high" wmode="transparent" type="application/x-shockwave-flash">
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+'});$("a[href='http://star.zing.vn/star/phong-thu/'], a[href='http://star.zing.vn/star/san-dien/']").replaceWith(function(){return"<center><embed src='http://star.zing.vn/flash/zingStarPlayer.swf?username=&status=karaoke&song_id="+
+getStarID($(this).attr("href"))+"&recorder_id=&urlDemo=http://image.star.zing.vn/flash/&domain=http://star.zing.vn' type='application/x-shockwave-flash' wmode='transparent' width='530' height='410'>
+
+Unknown end tag for &lt;/embed&gt;
+
+
+
+Unknown end tag for &lt;/center&gt;
+
+"});});
+
+Unknown end tag for &lt;/script&gt;
+
+
+
+```
+
+Rồi dán vào mod thông báo chung -> done
+
+  * Cách sử dụng: Hiện nay JMedia cung cấp 2 cách sử dụng
+> -- Link trực tiếp: Hầu hết đối với các trang đều sử dụng cách này, bạn chỉ cần copy link từ trình duyệt của mình và cho vào bài viết forum là dc.
+> -- Link nhúng: Cách này chỉ áp dụng dụng cho video, playlist trên mp3.zing.vn, toàn bộ hệ thống link trên nhac.vui.vn
+
+  * Từ ver 4.0 trở đi, JMedia cho phép người dùng thoải mái thay đổi kích thước video, các trình nghe nhạc sẽ ko hỗ trợ.
+> -- Cách sử dụng: Thêm đoạn sau vào link gốc:
+
+```
+
+&height=chiều_cao&width=chiều_rộng
+```
+
+> Đặt width hay height trước đều được.
+
+> -- Ví dụ có 1 link gốc http://www.youtube.com/watch?v=jBmqY9KUDzQ
+> Thay vì chèn
+
+```
+
+http://www.youtube.com/watch?v=jBmqY9KUDz
+```
+
+> Thì chèn chiều rộng vào chiều cao vào
+
+```
+
+http://www.youtube.com/watch?v=jBmqY9KUDz&height=500&width=500
+```
+
+
+> -- Lưu ý: Nếu sử dụng cách thay đổi kích thước này thì nhất thiết phải có 2 giá trị width và height, ko thể bỏ 1 trong 2, nếu ko thì hãy chèn link gốc, JMedia sẽ tự đặt giá trị height và width cho bạn.
+
+
+
+**Update log:**
+
+  * ver 1.0
+> -- Update bản sửa lỗi clip.vn và nhac.vui.vn
+  * ver 1.0.1: Sửa lỗi dán link ko đúng cũng bị replace
+  * ver 1.1.0: Update Youtube thumbnail
+  * ver 1.1.1: Sửa lỗi nhỏ
+  * ver 2.0: Hỗ trợ thêm 4 trang music.go.vn, nhacvn.net, nhincuoi.com, vimeo.com
+  * ver 3.0 (by SONGOKU): Bắt đầu hỗ trợ các trang game
+  * ver 3.1: Hỗ trợ toàn bộ link có đuôi .swf
+  * ver 3.2 (by SONGOKU): Thay skin mp3.zing.vn, fix lỗi star.zing.vn, fix autostart hầu hết các trang, dùng được tất cả giao diện, tự động cho video vào giữa.
+  * ver 4.0: Cho phép người dùng thay đổi kích thước của video từ các trang video mà JMedia hỗ trợ.
+  * ver 4.1: Sửa lỗi sử dụng và cập nhật tính năng mới cho link chia sẻ dạng http://youtu.be/ của youtube
+  * ver 4.2:
+> -- Hướng dẫn chèn video và playlist từ mp3.zing.vn, link từ nhac.vui.vn.
+> -- Tối ưu hoá code, ngắn hơn nhưng hiệu quả hơn
+> -- Hỗ trợ link trực tiếp của video và playlist từ nhaccuatui.com, đối với video có thể thay đổi kích thước.
+> -- Hỗ trợ link trực tiếp từ dailymotion
+
+
+
+Báo lỗi và góp ý để phiên bản sau hoàn thiện hơn nhé!!

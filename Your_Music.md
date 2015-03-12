@@ -1,0 +1,83 @@
+Add BBcode sau :
+
+
+```
+
+[musicfor][/musicfor]
+```
+
+
+```
+
+<div class="musicfor"><iframe width="400" height="300" src="http://www.youtube.com/embed/0vxfZtWE20g" frameborder="0" allowfullscreen>
+
+Unknown end tag for &lt;/iframe&gt;
+
+
+
+Unknown end tag for &lt;/div&gt;
+
+
+
+
+```
+
+
+
+Xong rồi thêm css này vào css giao diện :
+
+
+```
+
+/* Music*/
+
+.musicfor{
+background-color: rgba(0, 0, 0, 0.88) ;
+-moz-transition-duration: 0.5s;
+-webkit-transition-duration: 0.4s;
+-o-transition-duration: 0.5s;
+position: absolute;
+-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;
+-moz-opacity: 0.5;opacity: 0.5;filter: alpha(opacity=90);
+bottom: !important;left:-455px!important;width: 500px!important;height: 304px!important;
+padding: 4px 4px 4px 4px!important;font-size: 9px!important;font-weight:bold;
+vertical-align:middle;
+z-index: 9999;
+-moz-border-radius-topright:5px;
+-webkit-border-top-right-radius:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-right-radius:5px;
+position: fixed;
+
+background: url(http://a.imageshack.us/img171/5752/29829411.png) no-repeat black 100%;
+top: 150px;
+
+
+}
+
+
+.musicfor:hover {
+-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-moz-opacity: 0.8; opacity: 0.88; filter: alpha(opacity=100);
+left:-40px!important
+}
+
+
+.musicfor a {
+text-decoration:none!important;
+}
+
+
+```
+
+Thay đổi :
+```
+
+<div><iframe width="400" height="300" src="http://www.youtube.com/embed/0vxfZtWE20g" frameborder="0" allowfullscreen>
+
+Unknown end tag for &lt;/iframe&gt;
+
+
+
+Unknown end tag for &lt;/div&gt;
+
+```

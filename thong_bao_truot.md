@@ -1,0 +1,49 @@
+![http://np0.upanh.com/b3.s30.d1/2bd6658afcd4a4109d4cf0f35dd936ad_48452080.43.png](http://np0.upanh.com/b3.s30.d1/2bd6658afcd4a4109d4cf0f35dd936ad_48452080.43.png)
+
+Cách làm:Tạo bbcode
+
+```
+
+<script type="text/javascript" src="http://moreco.de/slide-note/demo/js/jquery.slidenote.min.js">
+
+Unknown end tag for &lt;/script&gt;
+
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function(){$('<div id="note" class="slidenote">Nội dung ở đây!!!
+
+Unknown end tag for &lt;/div&gt;
+
+').insertAfter(".inner:first");$('#note').slideNote({where: 100,closeImage: 'http://moreco.de/slide-note/demo/images/slidenote.close.png'});});//]]>
+
+Unknown end tag for &lt;/script&gt;
+
+<script type="text/javascript">//<![CDATA[
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-22797649-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();//]]>
+
+Unknown end tag for &lt;/script&gt;
+
+<style>.slidenote {background: #FBEC78; padding: 1em; }
+.slidenote img { float: left; margin-top: -2em; margin-left: -2em; }
+.slidenote img:hover { margin-top: -1.95em; }
+.slidenote h2 { padding: 0.5em; }
+.slidenote p { padding: 1em; }
+.slidenote span { padding: 1em; font-size: 0.8em; }
+.slidenote { -moz-box-shadow: -0.2em -0.2em 0.7em #222; -webkit-box-shadow: -0.2em -0.2em 0.7em #222; }
+
+Unknown end tag for &lt;/style&gt;
+
+
+
+```
+
+Xong, tìm
+
+```
+
+<div id="note" class="slidenote">Nội dung ở đây!!!
+
+Unknown end tag for &lt;/div&gt;
+
+
+
+```

@@ -1,0 +1,21 @@
+ChipTeam - Code by Jakub Lombard
+
+![http://nu6.upanh.com/b4.s34.d2/11950394c5eba012796dab79cb92065e_53021916.demo1.png](http://nu6.upanh.com/b4.s34.d2/11950394c5eba012796dab79cb92065e_53021916.demo1.png)
+
+
+```
+
+<!------------------------------------>
+<!---Icon Khung soạn thảo bài viết---->
+<!---ChipTeam code by Jakub Lombard--->
+<!------------------------------------>
+<script stype="text/javascript">
+$(function(){
+$(".toolbar").prepend('<img title="[khung]Nội dung bài viết[/khung]" width="16" height="16" onmouseout="outIcon(this)" onmouseover="overIcon(this)" onclick="comm._HTML(\'[khung]\', \'[/khung]\')" class="button" src="http://www.megapic.vn/images/53013604313209672731.png" />')
+});
+
+Unknown end tag for &lt;/script&gt;
+
+
+
+```

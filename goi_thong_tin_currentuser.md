@@ -1,0 +1,78 @@
+Sử dụng Eazy API. Đầu tiên tạo bbcode mới và dán vào thông báo chung:
+
+```
+
+$(function(){$(body).each(function(){$(this).html($(this).html().replace(/\[name]/gi, '<span class="jk-name">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[avatar]/gi, '<span class="jk-avatar">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[posts]/gi, '<span class="jk-posts">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[email]/gi, '<span class="jk-email">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[birthday]/gi, '<span class="jk-birthday">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[lastpost-time]/gi, '<span class="jk-lastpost-time">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[message]/gi, '<span class="jk-message">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[thanked]/gi, '<span class="jk-thanked">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[thanks]/gi, '<span class="jk-thanks">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[thanked-post]/gi, '<span class="jk-thanked-post">
+
+Unknown end tag for &lt;/span&gt;
+
+'));$(this).html($(this).html().replace(/\[reg]/gi, '<span class="jk-reg">
+
+Unknown end tag for &lt;/span&gt;
+
+'));});$.getJSON('/eazy-api.php?get=currentuser&lang=0', function (items) {$(items.output).each(function (i, item) {$(".jk-name").append('<a href="/memberlist.php?mode=viewprofile&u='+item.user_id+'" style="color:#'+item.user_colour+'" class="username-coloured">'+item.username+'
+
+Unknown end tag for &lt;/a&gt;
+
+');$(".jk-avatar").append(''+item.user_avatar+'');$(".jk-posts").append(''+item.user_posts+'');$(".jk-email").append(''+item.user_email+'');});$(".jk-birthday").append('item.user_birthday');$(".jk-lastpost-time").append(''+item.user_lastpost_time_formatted+'');$(".jk-message").append(''+item.user_unread_privmsg+'');$(".jk-thanked").append(''+item.user_thanked+'');$(".jk-thanks").append(''+item.user_thanks+'');$(".thanked-posts").append(''+item.user_thanks_post+'');$(".reg").append(''+item.user_regdate_formatted+'');});});
+```
+
+Vậy bây giờ bạn có thể gọi các thông tin của thành viên đang đăng nhập.
+```
+
+[name] : Tên thành viên
+[avatar]: Avatar của thành viên
+[posts]: Số bài viết của thành viên
+[email]: Email của thành viên
+[birthday]: Sinh nhật của thành viên
+[lastpost-time]: Thời gian bài gửi cuối cùng của thành viên
+[message]: Số tin nhắn chưa đọc
+[thanked]: Số lần được cảm ơn
+[thanks]: Số lần bấm cảm ơn
+[thanked-post]: Số bài được bấm cảm ơn
+[reg]: Ngày đăng ký
+```
+Có thể còn thiếu nhiều, comment những thông tin các bạn cần bên dưới để mình thêm vào, [name](name.md) có chức năng tương tự như
+
+```
+
+[you]
+```
+
+P/s: Code chay, chưa test. Nếu có lỗi gì thì comment bên dưới để mình fix.

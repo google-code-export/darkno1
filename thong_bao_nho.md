@@ -1,0 +1,22 @@
+![http://i76.servimg.com/u/f76/17/61/77/59/pictur21.png](http://i76.servimg.com/u/f76/17/61/77/59/pictur21.png)
+> ```
+  <!---- BEGIN Thông Báo Nhỏ - Sharing Online ---->
+<div style="right: 5px;bottom: 5px;clip: inherit;position: fixed;width:auto;min-height:50px; border:1px solid #999; padding:1px 15px 5px 15px;background: #E4F6F8 url(http://i28.servimg.com/u/f28/13/58/60/43/ghim10.png) no-repeat;color:red;font-weight: bold;font-size:13px" original-title=""><div style="padding-bottom:4px" align="center" original-title=""><img src="http://i68.servimg.com/u/f68/13/18/45/07/thongb10.gif" original-title="">
+
+Unknown end tag for &lt;/div&gt;
+
+<img src="http://i48.servimg.com/u/f48/14/28/30/23/untitl51.png" original-title=""> Tuyển Mod <a href="Link Topic" original-title="">Click here
+
+Unknown end tag for &lt;/a&gt;
+
+<br><img src="http://i48.servimg.com/u/f48/14/28/30/23/untitl51.png" original-title="">Nội Quy<a href="Link Topic" original-title="">Click here
+
+Unknown end tag for &lt;/a&gt;
+
+<br>
+
+Unknown end tag for &lt;/div&gt;
+
+
+<!---- END Thông Báo Nhỏ - Sharing Online ---->
+```
